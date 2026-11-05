@@ -1,0 +1,71 @@
+example_id,group_id,question_id,explanation,label,predicted,score,would_review
+correct_reasoning-F02-P1-test,correct_reasoning-F02,C-ADD-6,"The pieces have to be the same size before you add, so I rewrote both with 14 as the denominator and then added.",correct_reasoning,unscaled_numerator,0.23,True
+correct_reasoning-F02-P2-test,correct_reasoning-F02,C-ADD-6,you cant add different sized pieces. i made them the same size pieces first then added them,correct_reasoning,correct_reasoning,0.211,True
+correct_reasoning-F05-P1-test,correct_reasoning-F05,C-ADD-5,"My estimate was a bit more than 1/3, and 8/15 makes sense because I converted to a common denominator before adding.",correct_reasoning,larger_denominator_bigger,0.222,True
+correct_reasoning-F05-P2-test,correct_reasoning-F05,C-ADD-5,"I checked that the answer is bigger than both fractions, which it has to be when you add. I used a common denominator to get it.",correct_reasoning,correct_reasoning,0.217,True
+correct_reasoning-F06-P1-test,correct_reasoning-F06,C-EQ-4,"To get from 5 to 15 you multiply by 3, so you multiply the top by 3 too: 6/15.",correct_reasoning,additive_equivalence,0.242,True
+correct_reasoning-F06-P2-test,correct_reasoning-F06,C-EQ-5,"3 times 4 is 12, so 1 times 4 is 4. Same multiplier top and bottom.",correct_reasoning,correct_reasoning,0.24,True
+correct_reasoning-F08-P1-test,correct_reasoning-F08,C-EQ-4,I drew 2/5 and split each part into 3 smaller pieces. Now there are 15 pieces and 6 are shaded.,correct_reasoning,add_across,0.224,True
+correct_reasoning-F08-P2-test,correct_reasoning-F08,C-EQ-4,"If you cut every piece into 3 pieces, the shaded part is 6 of 15 pieces, so it is the same amount.",correct_reasoning,correct_reasoning,0.228,True
+correct_reasoning-F09-P1-test,correct_reasoning-F09,C-EQ-5,"4/12 simplifies back to 1/3 when you divide top and bottom by 4, so they are equivalent.",correct_reasoning,additive_equivalence,0.215,True
+correct_reasoning-F09-P2-test,correct_reasoning-F09,C-EQ-4,"I checked by dividing 6 and 15 by 3, which gives 2/5 again.",correct_reasoning,correct_reasoning,0.267,True
+correct_reasoning-F13-P1-test,correct_reasoning-F13,C-ADD-6,I used a number line split into 14 parts and counted 4 parts then 7 more parts.,correct_reasoning,larger_denominator_bigger,0.247,True
+correct_reasoning-F13-P2-test,correct_reasoning-F13,C-ADD-5,"On a number line marked in 15ths, I jumped 5 and then 3, landing on 8/15.",correct_reasoning,correct_reasoning,0.242,True
+correct_reasoning-F18-P1-test,correct_reasoning-F18,C-EQ-4,"The ratio of top to bottom has to stay the same, so both get scaled by 3.",correct_reasoning,additive_equivalence,0.263,True
+correct_reasoning-F18-P2-test,correct_reasoning-F18,C-EQ-4,Keeping the same proportion means multiplying both parts by 3.,correct_reasoning,additive_equivalence,0.234,True
+add_across-F02-P1-test,add_across-F02,C-ADD-6,You add the tops together and the bottoms together.,add_across,add_across,0.247,True
+add_across-F02-P2-test,add_across-F02,C-ADD-5,"just add straight across, numerators then denominators",add_across,add_across,0.236,True
+add_across-F08-P1-test,add_across-F08,C-ADD-6,"It's like multiplying fractions where you go straight across, but with plus.",add_across,add_across,0.218,True
+add_across-F08-P2-test,add_across-F08,C-ADD-6,"When you multiply fractions you go across, so for adding I also went across.",add_across,correct_reasoning,0.218,True
+add_across-F11-P1-test,add_across-F11,C-ADD-6,the answer is 3 over 9,add_across,correct_reasoning,0.223,True
+add_across-F11-P2-test,add_across-F11,C-ADD-5,i got 2 on top and 8 on bottom,add_across,add_across,0.229,True
+add_across-F12-P1-test,add_across-F12,C-ADD-6,Add the parts and add the wholes.,add_across,add_across,0.223,True
+add_across-F12-P2-test,add_across-F12,C-ADD-6,I added the parts together and the wholes together to get the total.,add_across,add_across,0.238,True
+add_across-F17-P1-test,add_across-F17,C-ADD-6,I just did the plus on both levels of the fraction.,add_across,add_across,0.222,True
+add_across-F17-P2-test,add_across-F17,C-ADD-5,Did the addition on the top level and the bottom level.,add_across,add_across,0.242,True
+add_across-F18-P1-test,add_across-F18,C-ADD-5,2/8 since 1 and 1 make 2 and 3 and 5 make 8.,add_across,add_across,0.225,True
+add_across-F18-P2-test,add_across-F18,C-ADD-5,1 and 1 make 2; 3 and 5 make 8.,add_across,add_across,0.23,True
+add_across-F20-P1-test,add_across-F20,C-ADD-6,I added the two fractions straight across without changing them first.,add_across,add_across,0.245,True
+add_across-F20-P2-test,add_across-F20,C-ADD-6,"Didn't change anything, just added across.",add_across,unscaled_numerator,0.226,True
+unscaled_numerator-F01-P1-test,unscaled_numerator-F01,C-ADD-6,I made the denominators both 14 and then added 2 + 1 to get 3/14.,unscaled_numerator,additive_equivalence,0.222,True
+unscaled_numerator-F01-P2-test,unscaled_numerator-F01,C-ADD-5,"Common denominator is 15, then 1 plus 1 is 2, so 2/15.",unscaled_numerator,correct_reasoning,0.237,True
+unscaled_numerator-F03-P1-test,unscaled_numerator-F03,C-ADD-5,I multiplied the denominators to get 15 and added the numerators to get 2.,unscaled_numerator,add_across,0.242,True
+unscaled_numerator-F03-P2-test,unscaled_numerator-F03,C-ADD-5,"Bottom numbers times each other gives 15, then add the top numbers.",unscaled_numerator,correct_reasoning,0.229,True
+unscaled_numerator-F06-P1-test,unscaled_numerator-F06,C-ADD-5,"I rewrote 1/3 as 1/15 and 1/5 as 1/15, then added.",unscaled_numerator,correct_reasoning,0.237,True
+unscaled_numerator-F06-P2-test,unscaled_numerator-F06,C-ADD-6,2/7 turned into 2/14 and 1/2 turned into 1/14.,unscaled_numerator,unscaled_numerator,0.214,True
+unscaled_numerator-F08-P1-test,unscaled_numerator-F08,C-EQ-4,"The new denominator is 15 and the numerator stays 2, so 2/15.",unscaled_numerator,unscaled_numerator,0.221,True
+unscaled_numerator-F08-P2-test,unscaled_numerator-F08,C-EQ-5,I put 1 over 12 because the top doesn't change.,unscaled_numerator,unscaled_numerator,0.244,True
+unscaled_numerator-F10-P1-test,unscaled_numerator-F10,C-EQ-4,I multiplied the denominator by 3 to get 15. The numerator is still 2.,unscaled_numerator,additive_equivalence,0.227,True
+unscaled_numerator-F10-P2-test,unscaled_numerator-F10,C-EQ-5,"3 times 4 is 12, numerator stays 1",unscaled_numerator,correct_reasoning,0.222,True
+unscaled_numerator-F15-P1-test,unscaled_numerator-F15,C-ADD-5,I multiplied the bottom numbers by each other but the top numbers just get added.,unscaled_numerator,add_across,0.241,True
+unscaled_numerator-F15-P2-test,unscaled_numerator-F15,C-ADD-6,The bottoms get multiplied together and the tops get added.,unscaled_numerator,add_across,0.258,True
+unscaled_numerator-F16-P1-test,unscaled_numerator-F16,C-ADD-5,"The numerator counts how many pieces there are, so 1 piece and 1 pieces make 2 pieces of size 15.",unscaled_numerator,correct_reasoning,0.21,True
+unscaled_numerator-F16-P2-test,unscaled_numerator-F16,C-ADD-5,"1 piece plus 1 pieces is 2 pieces, and I wrote them over 15.",unscaled_numerator,correct_reasoning,0.22,True
+additive_equivalence-F03-P1-test,additive_equivalence-F03,C-EQ-4,The denominator went up by 10 so the numerator goes up by 10.,additive_equivalence,additive_equivalence,0.226,True
+additive_equivalence-F03-P2-test,additive_equivalence-F03,C-EQ-4,"Bottom went up 10, so top goes up 10 as well.",additive_equivalence,add_across,0.254,True
+additive_equivalence-F09-P1-test,additive_equivalence-F09,C-EQ-5,"I need to get to 12, so I add the difference to both parts.",additive_equivalence,additive_equivalence,0.248,True
+additive_equivalence-F09-P2-test,additive_equivalence-F09,C-EQ-4,find how much you need to add to get the new denominator and add that to both,additive_equivalence,additive_equivalence,0.239,True
+additive_equivalence-F10-P1-test,additive_equivalence-F10,C-EQ-5,You add the same number so the fraction doesn't change.,additive_equivalence,additive_equivalence,0.217,True
+additive_equivalence-F10-P2-test,additive_equivalence-F10,C-EQ-4,adding the same number to both parts keeps it equal,additive_equivalence,additive_equivalence,0.274,True
+additive_equivalence-F11-P1-test,additive_equivalence-F11,C-EQ-4,the top and bottom both go up by the same amount,additive_equivalence,additive_equivalence,0.272,True
+additive_equivalence-F11-P2-test,additive_equivalence-F11,C-EQ-4,both numbers increase by the same amount,additive_equivalence,additive_equivalence,0.281,True
+additive_equivalence-F13-P1-test,additive_equivalence-F13,C-EQ-4,"15 minus 5 is 10, so the numerator is 2 plus 10.",additive_equivalence,add_across,0.221,True
+additive_equivalence-F13-P2-test,additive_equivalence-F13,C-EQ-4,I subtracted 5 from 15 to get 10 and added it to 2.,additive_equivalence,additive_equivalence,0.238,True
+additive_equivalence-F15-P1-test,additive_equivalence-F15,C-EQ-4,To make an equivalent fraction you add the same thing to the top and bottom.,additive_equivalence,additive_equivalence,0.282,True
+additive_equivalence-F15-P2-test,additive_equivalence-F15,C-EQ-4,Equivalent fractions come from adding equal amounts to the numerator and denominator.,additive_equivalence,additive_equivalence,0.279,True
+additive_equivalence-F16-P1-test,additive_equivalence-F16,C-EQ-5,"Adding 9 to the bottom made it 12, so adding 9 to 1 makes 10.",additive_equivalence,additive_equivalence,0.249,True
+additive_equivalence-F16-P2-test,additive_equivalence-F16,C-EQ-5,plus 9 gets the bottom to 12 and plus 9 gets the top to 10,additive_equivalence,additive_equivalence,0.262,True
+larger_denominator_bigger-F02-P1-test,larger_denominator_bigger-F02,C-CMP-4,"The bigger the denominator, the bigger the fraction.",larger_denominator_bigger,larger_denominator_bigger,0.252,True
+larger_denominator_bigger-F02-P2-test,larger_denominator_bigger-F02,C-CMP-4,a bigger number on the bottom means a bigger fraction,larger_denominator_bigger,larger_denominator_bigger,0.247,True
+larger_denominator_bigger-F03-P1-test,larger_denominator_bigger-F03,C-CMP-5,The numerators are the same so I looked at the denominators and picked the bigger one.,larger_denominator_bigger,larger_denominator_bigger,0.214,True
+larger_denominator_bigger-F03-P2-test,larger_denominator_bigger-F03,C-CMP-4,"Same top, so the one with the bigger bottom number is bigger.",larger_denominator_bigger,larger_denominator_bigger,0.25,True
+larger_denominator_bigger-F07-P1-test,larger_denominator_bigger-F07,C-CMP-4,"You compare fractions like whole numbers, so look at which bottom is bigger.",larger_denominator_bigger,larger_denominator_bigger,0.24,True
+larger_denominator_bigger-F07-P2-test,larger_denominator_bigger-F07,C-CMP-5,I compared them like normal numbers,larger_denominator_bigger,add_across,0.245,True
+larger_denominator_bigger-F09-P1-test,larger_denominator_bigger-F09,C-CMP-4,If you cut it into 8 pieces you get more pizza than cutting it into 5.,larger_denominator_bigger,larger_denominator_bigger,0.236,True
+larger_denominator_bigger-F09-P2-test,larger_denominator_bigger-F09,C-CMP-5,cutting into more slices gives you more pizza,larger_denominator_bigger,larger_denominator_bigger,0.264,True
+larger_denominator_bigger-F12-P1-test,larger_denominator_bigger-F12,C-CMP-5,The larger number on the bottom makes it worth more.,larger_denominator_bigger,larger_denominator_bigger,0.262,True
+larger_denominator_bigger-F12-P2-test,larger_denominator_bigger-F12,C-CMP-4,a large bottom number is worth more,larger_denominator_bigger,larger_denominator_bigger,0.261,True
+larger_denominator_bigger-F13-P1-test,larger_denominator_bigger-F13,C-CMP-5,1/9 is bigger since 9 is a higher number.,larger_denominator_bigger,larger_denominator_bigger,0.301,True
+larger_denominator_bigger-F13-P2-test,larger_denominator_bigger-F13,C-CMP-5,"Higher number on the bottom, so 1/9 is more.",larger_denominator_bigger,larger_denominator_bigger,0.271,True
+larger_denominator_bigger-F20-P1-test,larger_denominator_bigger-F20,C-CMP-4,A bigger denominator makes the fraction worth more.,larger_denominator_bigger,larger_denominator_bigger,0.27,True
+larger_denominator_bigger-F20-P2-test,larger_denominator_bigger-F20,C-CMP-4,bigger denominator = worth more,larger_denominator_bigger,larger_denominator_bigger,0.265,True

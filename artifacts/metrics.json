@@ -1,0 +1,321 @@
+{
+  "data_note": "ALL DATA IS SYNTHETIC: author-written template explanations, not real student work. Results do not establish classroom effectiveness.",
+  "seed": 42,
+  "dataset": {
+    "labeled_rows_in_file": 400,
+    "dev": {
+      "examples": 130,
+      "families": 65,
+      "by_label": {
+        "correct_reasoning": {
+          "examples": 26,
+          "families": 13
+        },
+        "add_across": {
+          "examples": 26,
+          "families": 13
+        },
+        "unscaled_numerator": {
+          "examples": 26,
+          "families": 13
+        },
+        "additive_equivalence": {
+          "examples": 26,
+          "families": 13
+        },
+        "larger_denominator_bigger": {
+          "examples": 26,
+          "families": 13
+        }
+      },
+      "contexts": [
+        "C-ADD-1",
+        "C-ADD-2",
+        "C-ADD-3",
+        "C-ADD-4",
+        "C-CMP-1",
+        "C-CMP-2",
+        "C-CMP-3",
+        "C-EQ-1",
+        "C-EQ-2",
+        "C-EQ-3"
+      ]
+    },
+    "test": {
+      "examples": 70,
+      "families": 35,
+      "by_label": {
+        "correct_reasoning": {
+          "examples": 14,
+          "families": 7
+        },
+        "add_across": {
+          "examples": 14,
+          "families": 7
+        },
+        "unscaled_numerator": {
+          "examples": 14,
+          "families": 7
+        },
+        "additive_equivalence": {
+          "examples": 14,
+          "families": 7
+        },
+        "larger_denominator_bigger": {
+          "examples": 14,
+          "families": 7
+        }
+      },
+      "contexts": [
+        "C-ADD-5",
+        "C-ADD-6",
+        "C-CMP-4",
+        "C-CMP-5",
+        "C-EQ-4",
+        "C-EQ-5"
+      ]
+    },
+    "group_overlap_dev_test": []
+  },
+  "training": {
+    "C": 0.3,
+    "cv_macro_f1_by_C": {
+      "0.3": 0.574554659829508,
+      "1.0": 0.56824349941997,
+      "3.0": 0.5454320610427861,
+      "10.0": 0.5326433172917782
+    },
+    "validation_oof_accuracy": 0.5846153846153846,
+    "validation_oof_macro_f1": 0.574554659829508,
+    "threshold_table_validation": [
+      {
+        "threshold": 0.2,
+        "coverage": 1.0,
+        "accepted": 130,
+        "accepted_accuracy": 0.5846153846153846
+      },
+      {
+        "threshold": 0.25,
+        "coverage": 0.23846153846153847,
+        "accepted": 31,
+        "accepted_accuracy": 0.7096774193548387
+      },
+      {
+        "threshold": 0.3,
+        "coverage": 0.007692307692307693,
+        "accepted": 1,
+        "accepted_accuracy": 0.0
+      },
+      {
+        "threshold": 0.35,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.4,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.45,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.5,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.55,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.65,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.75,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.0,
+        "accepted": 0,
+        "accepted_accuracy": NaN
+      }
+    ],
+    "threshold_policy": "lowest threshold with validation accepted-accuracy >= 90%"
+  },
+  "test": {
+    "model": {
+      "accuracy": 0.6428571428571429,
+      "macro_f1": 0.615682525278714,
+      "per_class": {
+        "correct_reasoning": {
+          "precision": 0.42857142857142855,
+          "recall": 0.42857142857142855,
+          "f1": 0.42857142857142855,
+          "support": 14
+        },
+        "add_across": {
+          "precision": 0.6111111111111112,
+          "recall": 0.7857142857142857,
+          "f1": 0.6875,
+          "support": 14
+        },
+        "unscaled_numerator": {
+          "precision": 0.6,
+          "recall": 0.21428571428571427,
+          "f1": 0.3157894736842105,
+          "support": 14
+        },
+        "additive_equivalence": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8571428571428571,
+          "f1": 0.75,
+          "support": 14
+        },
+        "larger_denominator_bigger": {
+          "precision": 0.8666666666666667,
+          "recall": 0.9285714285714286,
+          "f1": 0.896551724137931,
+          "support": 14
+        }
+      }
+    },
+    "baseline_most_frequent": {
+      "accuracy": 0.2,
+      "macro_f1": 0.06666666666666667,
+      "per_class": {
+        "correct_reasoning": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        },
+        "add_across": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.3333333333333333,
+          "support": 14
+        },
+        "unscaled_numerator": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        },
+        "additive_equivalence": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        },
+        "larger_denominator_bigger": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        }
+      },
+      "predicted_class": "add_across"
+    },
+    "confusion_matrix": {
+      "labels": [
+        "correct_reasoning",
+        "add_across",
+        "unscaled_numerator",
+        "additive_equivalence",
+        "larger_denominator_bigger"
+      ],
+      "matrix": [
+        [
+          6,
+          1,
+          1,
+          4,
+          2
+        ],
+        [
+          2,
+          11,
+          1,
+          0,
+          0
+        ],
+        [
+          6,
+          3,
+          3,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          12,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          13
+        ]
+      ]
+    },
+    "selective_prediction": {
+      "threshold": 1.01,
+      "coverage": 0.0,
+      "accepted": 0,
+      "routed_to_review": 70,
+      "accepted_accuracy": null,
+      "review_accuracy": 0.6428571428571429
+    },
+    "n_errors": 25
+  },
+  "calibration": "not evaluated; scores are treated as uncalibrated"
+}
