@@ -1,0 +1,20 @@
+[project]
+name = "reteach"
+version = "0.1.0"
+description = "Teacher-facing misconception analytics for fraction quizzes (synthetic demo)."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]  # long template strings are clearer unwrapped
+
+[tool.ruff.lint.isort]
+known-first-party = ["reteach", "conftest"]

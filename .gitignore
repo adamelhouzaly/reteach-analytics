@@ -1,0 +1,16 @@
+# Environments & caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Locally generated model (rebuild with `python -m reteach.cli train`)
+models/
+*.joblib
+*.pkl
+
+# Teacher corrections and other local outputs
+outputs/
