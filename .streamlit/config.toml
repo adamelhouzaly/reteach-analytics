@@ -1,10 +1,30 @@
+# Calm, readable education-dashboard theme (light). Colours are also mirrored in ui/theme.py.
 [theme]
 base = "light"
-primaryColor = "#2a78d6"
-backgroundColor = "#fcfcfb"
-secondaryBackgroundColor = "#f2f1ee"
-textColor = "#0b0b0b"
-font = "sans serif"
+primaryColor = "#0f766e"                 # teal accent (5.5:1 on white)
+backgroundColor = "#f3f5f7"              # soft gray page
+secondaryBackgroundColor = "#eef1f4"     # inputs, code
+textColor = "#1b2a41"                    # dark navy
+borderColor = "#dde3ea"
+showWidgetBorder = true
+dataframeBorderColor = "#e6eaef"
+dataframeHeaderBackgroundColor = "#f6f8fa"
+dataframeHeaderTextColor = "#3b4a5f"
+baseRadius = "10px"
+buttonRadius = "8px"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+baseFontSize = 15
+headingFontSizes = ["1.85rem", "1.35rem", "1.12rem", "1rem", "0.95rem", "0.9rem"]
+headingFontWeights = [700, 650, 600, 600, 600, 600]
+metricValueFontSize = "1.9rem"
+linkColor = "#0f766e"
+yellowColor = "#d97706"
+yellowBackgroundColor = "#fff6e5"
+yellowTextColor = "#8a4b08"
+orangeColor = "#d97706"
+orangeBackgroundColor = "#fff6e5"
+orangeTextColor = "#8a4b08"
 
 [client]
 showErrorDetails = false
