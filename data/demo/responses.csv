@@ -1,0 +1,597 @@
+student_id,question_id,selected_option,explanation
+S001,Q1,B,
+S001,Q2,C,the top stays 2 and the bottom is 9
+S001,Q3,A,
+S001,Q4,A,
+S001,Q5,D,because of the numbers
+S001,Q6,,
+S001,Q7,A,
+S001,Q8,C,same denominator then add the numerators 1 and 2
+S001,Q9,B,
+S001,Q10,,
+S002,Q1,C,
+S002,Q2,D,I think this one is right
+S002,Q3,A,
+S002,Q4,D,
+S002,Q5,B,fewer slices so each slice is bigger
+S002,Q6,B,
+S002,Q7,B,
+S002,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S002,Q9,B,
+S002,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S003,Q1,A,
+S003,Q2,D,because of the numbers
+S003,Q3,D,
+S003,Q4,A,
+S003,Q5,B,fewer slices so each slice is bigger
+S003,Q6,C,
+S003,Q7,B,
+S003,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S003,Q9,B,
+S003,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S004,Q1,A,
+S004,Q2,C,I only changed the denominator
+S004,Q3,B,
+S004,Q4,A,
+S004,Q5,B,I think this one is right
+S004,Q6,C,
+S004,Q7,B,
+S004,Q8,A,"first make equal size pieces using 12, then add how many pieces"
+S004,Q9,B,
+S004,Q10,A,it looked right to me
+S005,Q1,C,
+S005,Q2,A,the bottom needs 6 more so the top gets 6 more
+S005,Q3,D,
+S005,Q4,D,
+S005,Q5,D,idk
+S005,Q6,C,
+S005,Q7,B,
+S005,Q8,C,
+S005,Q9,B,
+S005,Q10,C,
+S006,Q1,A,
+S006,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S006,Q3,A,
+S006,Q4,A,
+S006,Q5,B,it looked right to me
+S006,Q6,C,
+S006,Q7,B,
+S006,Q8,,
+S006,Q9,B,
+S006,Q10,C,I turned them into fractions with the same denominator 6 and then added the tops.
+S007,Q1,A,
+S007,Q2,,
+S007,Q3,A,
+S007,Q4,B,
+S007,Q5,A,the one with the bigger denominator is bigger
+S007,Q6,C,
+S007,Q7,B,
+S007,Q8,C,made the bottom 12 and added the tops
+S007,Q9,B,
+S007,Q10,C,I turned them into fractions with the same denominator 6 and then added the tops.
+S008,Q1,A,
+S008,Q2,B,multiply both the top and bottom by 3
+S008,Q3,C,
+S008,Q4,A,
+S008,Q5,B,fewer slices so each slice is bigger
+S008,Q6,C,
+S008,Q7,B,
+S008,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S008,Q9,B,
+S008,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S009,Q1,D,
+S009,Q2,A,it looked right to me
+S009,Q3,A,
+S009,Q4,A,
+S009,Q5,C,I think this one is right
+S009,Q6,A,
+S009,Q7,A,
+S009,Q8,C,same denominator then add the numerators 1 and 2
+S009,Q9,C,
+S009,Q10,A,2+1 and 3+6
+S010,Q1,A,
+S010,Q2,A,I added 6 to both the top and the bottom
+S010,Q3,B,
+S010,Q4,B,
+S010,Q5,A,it has more pieces
+S010,Q6,C,
+S010,Q7,A,
+S010,Q8,B,
+S010,Q9,C,
+S010,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S011,Q1,A,
+S011,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S011,Q3,D,
+S011,Q4,A,
+S011,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S011,Q6,C,
+S011,Q7,B,
+S011,Q8,C,same denominator then add the numerators 1 and 2
+S011,Q9,,
+S011,Q10,C,"Rewrite 2/3 and 1/6 so they have the same denominator, then add numerators."
+S012,Q1,D,
+S012,Q2,A,I added 6 to both the top and the bottom
+S012,Q3,B,
+S012,Q4,C,
+S012,Q5,D,I guessed
+S012,Q6,A,
+S012,Q7,A,
+S012,Q8,D,it looked right to me
+S012,Q9,C,
+S012,Q10,C,I turned them into fractions with the same denominator 6 and then added the tops.
+S013,Q1,A,
+S013,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S013,Q3,C,
+S013,Q4,B,
+S013,Q5,A,it has more pieces
+S013,Q6,C,
+S013,Q7,B,
+S013,Q8,B,1+2 and 4+3
+S013,Q9,D,
+S013,Q10,A,
+S014,Q1,D,
+S014,Q2,B,multiply both the top and bottom by 3
+S014,Q3,D,
+S014,Q4,,
+S014,Q5,B,fewer slices so each slice is bigger
+S014,Q6,C,
+S014,Q7,B,
+S014,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S014,Q9,B,
+S014,Q10,C,"Rewrite 2/3 and 1/6 so they have the same denominator, then add numerators."
+S015,Q1,C,
+S015,Q2,B,multiply both the top and bottom by 3
+S015,Q3,D,
+S015,Q4,B,
+S015,Q5,B,fewer slices so each slice is bigger
+S015,Q6,B,
+S015,Q7,B,
+S015,Q8,B,1+2 and 4+3
+S015,Q9,B,
+S015,Q10,,
+S016,Q1,A,
+S016,Q2,B,multiply both the top and bottom by 3
+S016,Q3,D,
+S016,Q4,A,
+S016,Q5,B,fewer slices so each slice is bigger
+S016,Q6,C,
+S016,Q7,B,
+S016,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S016,Q9,B,
+S016,Q10,C,I turned them into fractions with the same denominator 6 and then added the tops.
+S017,Q1,A,
+S017,Q2,B,multiply both the top and bottom by 3
+S017,Q3,D,
+S017,Q4,,
+S017,Q5,A,it looked right to me
+S017,Q6,B,
+S017,Q7,B,
+S017,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S018,Q1,A,
+S018,Q2,A,the bottom needs 6 more so the top gets 6 more
+S018,Q3,D,
+S018,Q4,B,
+S018,Q5,B,fewer slices so each slice is bigger
+S018,Q6,B,
+S018,Q7,,
+S018,Q8,A,"Rewrite 1/4 and 2/3 so they have the same denominator, then add numerators."
+S018,Q9,B,
+S018,Q10,C,I turned them into fractions with the same denominator 6 and then added the tops.
+S019,Q1,A,
+S019,Q2,B,idk
+S019,Q3,D,
+S019,Q4,A,
+S019,Q5,A,9 is bigger than 7
+S019,Q6,C,
+S019,Q7,A,
+S019,Q8,B,add numerator with numerator and denominator with denominator
+S019,Q9,B,
+S019,Q10,A,I added the top numbers and then the bottom numbers
+S020,Q1,A,
+S020,Q2,B,multiply both the top and bottom by 3
+S020,Q3,D,
+S020,Q4,A,
+S020,Q5,C,idk
+S020,Q6,A,
+S020,Q7,C,
+S020,Q8,B,1+2 and 4+3
+S020,Q9,C,
+S020,Q10,A,add numerator with numerator and denominator with denominator
+S021,Q1,A,
+S021,Q2,B,multiply both the top and bottom by 3
+S021,Q3,D,
+S021,Q4,A,
+S021,Q5,B,I think this one is right
+S021,Q6,C,
+S021,Q7,B,
+S021,Q8,A,"first make equal size pieces using 12, then add how many pieces"
+S021,Q9,B,
+S021,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S022,Q1,A,
+S022,Q2,D,idk
+S022,Q3,A,
+S022,Q4,D,
+S022,Q5,D,idk
+S022,Q6,C,
+S022,Q7,D,
+S022,Q8,D,I think this one is right
+S022,Q9,A,
+S022,Q10,A,
+S023,Q1,A,
+S023,Q2,B,multiply both the top and bottom by 3
+S023,Q3,D,
+S023,Q4,A,
+S023,Q5,C,I guessed
+S023,Q6,C,
+S023,Q7,A,
+S023,Q8,B,add numerator with numerator and denominator with denominator
+S023,Q9,C,
+S023,Q10,A,I added the top numbers and then the bottom numbers
+S024,Q1,B,
+S024,Q2,A,I guessed
+S024,Q3,D,
+S024,Q4,A,
+S024,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S024,Q6,C,
+S024,Q7,A,
+S024,Q8,A,it looked right to me
+S024,Q9,B,
+S024,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S025,Q1,C,
+S025,Q2,C,
+S025,Q3,D,
+S025,Q4,A,
+S025,Q5,B,fewer slices so each slice is bigger
+S025,Q6,C,
+S025,Q7,C,
+S025,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S025,Q9,B,
+S025,Q10,B,
+S026,Q1,B,
+S026,Q2,A,the bottom needs 6 more so the top gets 6 more
+S026,Q3,C,
+S026,Q4,A,
+S026,Q5,B,fewer slices so each slice is bigger
+S026,Q6,D,
+S026,Q7,B,
+S026,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S026,Q9,B,
+S026,Q10,C,I turned them into fractions with the same denominator 6 and then added the tops.
+S027,Q1,A,
+S027,Q2,B,multiply both the top and bottom by 3
+S027,Q3,D,
+S027,Q4,A,
+S027,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S027,Q6,C,
+S027,Q7,B,
+S027,Q8,A,"first make equal size pieces using 12, then add how many pieces"
+S027,Q9,B,
+S027,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S028,Q1,A,
+S028,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S028,Q3,D,
+S028,Q4,,
+S028,Q5,D,because of the numbers
+S028,Q6,C,
+S028,Q7,A,
+S028,Q8,B,1+2 and 4+3
+S028,Q9,C,
+S028,Q10,A,add numerator with numerator and denominator with denominator
+S029,Q1,B,
+S029,Q2,C,the top stays 2 and the bottom is 9
+S029,Q3,D,
+S029,Q4,B,
+S029,Q5,A,it has more pieces
+S029,Q6,B,
+S029,Q7,B,
+S029,Q8,A,"Rewrite 1/4 and 2/3 so they have the same denominator, then add numerators."
+S029,Q9,B,
+S029,Q10,A,add numerator with numerator and denominator with denominator
+S030,Q1,C,
+S030,Q2,C,the top stays 2 and the bottom is 9
+S030,Q3,A,
+S030,Q4,D,
+S030,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S030,Q6,C,
+S030,Q7,C,
+S030,Q8,C,made the bottom 12 and added the tops
+S030,Q9,A,
+S030,Q10,B,made the bottom 6 and added the tops
+S031,Q1,A,
+S031,Q2,B,my friend said so
+S031,Q3,D,
+S031,Q4,,
+S031,Q5,A,it has more pieces
+S031,Q6,C,
+S031,Q7,B,
+S031,Q8,C,made the bottom 12 and added the tops
+S031,Q9,B,
+S031,Q10,B,made the bottom 6 and added the tops
+S032,Q1,A,
+S032,Q2,B,multiply both the top and bottom by 3
+S032,Q3,D,
+S032,Q4,B,
+S032,Q5,A,because of the numbers
+S032,Q6,C,
+S032,Q7,A,
+S032,Q8,B,add numerator with numerator and denominator with denominator
+S032,Q9,C,
+S032,Q10,A,add numerator with numerator and denominator with denominator
+S033,Q1,A,
+S033,Q2,A,I added 6 to both the top and the bottom
+S033,Q3,B,
+S033,Q4,A,
+S033,Q5,D,
+S033,Q6,C,
+S033,Q7,B,
+S033,Q8,C,made the bottom 12 and added the tops
+S033,Q9,B,
+S033,Q10,C,it looked right to me
+S034,Q1,C,
+S034,Q2,C,the top stays 2 and the bottom is 9
+S034,Q3,B,
+S034,Q4,,
+S034,Q5,D,because of the numbers
+S034,Q6,D,
+S034,Q7,B,
+S034,Q8,,
+S034,Q9,C,
+S034,Q10,C,
+S035,Q1,A,
+S035,Q2,B,multiply both the top and bottom by 3
+S035,Q3,D,
+S035,Q4,A,
+S035,Q5,B,I think this one is right
+S035,Q6,C,
+S035,Q7,B,
+S035,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S035,Q9,B,
+S035,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S036,Q1,C,
+S036,Q2,A,I added 6 to both the top and the bottom
+S036,Q3,A,
+S036,Q4,A,
+S036,Q5,B,fewer slices so each slice is bigger
+S036,Q6,C,
+S036,Q7,C,
+S036,Q8,C,made the bottom 12 and added the tops
+S036,Q9,A,
+S036,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S037,Q1,B,
+S037,Q2,A,the bottom needs 6 more so the top gets 6 more
+S037,Q3,,
+S037,Q4,A,
+S037,Q5,D,my friend said so
+S037,Q6,C,
+S037,Q7,D,
+S037,Q8,A,"first make equal size pieces using 12, then add how many pieces"
+S037,Q9,B,
+S037,Q10,C,"Rewrite 2/3 and 1/6 so they have the same denominator, then add numerators."
+S038,Q1,C,
+S038,Q2,C,the top stays 2 and the bottom is 9
+S038,Q3,A,
+S038,Q4,A,
+S038,Q5,B,fewer slices so each slice is bigger
+S038,Q6,C,
+S038,Q7,B,
+S038,Q8,A,"Rewrite 1/4 and 2/3 so they have the same denominator, then add numerators."
+S038,Q9,A,
+S038,Q10,C,I turned them into fractions with the same denominator 6 and then added the tops.
+S039,Q1,A,
+S039,Q2,B,multiply both the top and bottom by 3
+S039,Q3,D,
+S039,Q4,B,
+S039,Q5,A,9 is bigger than 7
+S039,Q6,B,
+S039,Q7,B,
+S039,Q8,A,"first make equal size pieces using 12, then add how many pieces"
+S039,Q9,B,
+S039,Q10,C,"Rewrite 2/3 and 1/6 so they have the same denominator, then add numerators."
+S040,Q1,A,
+S040,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S040,Q3,D,
+S040,Q4,A,
+S040,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S040,Q6,C,
+S040,Q7,B,
+S040,Q8,A,"Rewrite 1/4 and 2/3 so they have the same denominator, then add numerators."
+S040,Q9,B,
+S040,Q10,C,
+S041,Q1,A,
+S041,Q2,B,it looked right to me
+S041,Q3,D,
+S041,Q4,A,
+S041,Q5,B,idk
+S041,Q6,A,
+S041,Q7,A,
+S041,Q8,B,
+S041,Q9,C,
+S041,Q10,A,2+1 and 3+6
+S042,Q1,C,
+S042,Q2,B,multiply both the top and bottom by 3
+S042,Q3,D,
+S042,Q4,A,
+S042,Q5,C,
+S042,Q6,B,
+S042,Q7,B,
+S042,Q8,A,
+S042,Q9,D,
+S042,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S043,Q1,A,
+S043,Q2,B,idk
+S043,Q3,D,
+S043,Q4,A,
+S043,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S043,Q6,C,
+S043,Q7,B,
+S043,Q8,C,made the bottom 12 and added the tops
+S043,Q9,B,
+S043,Q10,A,add numerator with numerator and denominator with denominator
+S044,Q1,A,
+S044,Q2,D,
+S044,Q3,D,
+S044,Q4,B,
+S044,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S044,Q6,B,
+S044,Q7,B,
+S044,Q8,A,because of the numbers
+S045,Q1,A,
+S045,Q2,B,multiply both the top and bottom by 3
+S045,Q3,D,
+S045,Q4,A,
+S045,Q5,B,fewer slices so each slice is bigger
+S045,Q6,B,
+S045,Q7,B,
+S045,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S045,Q9,B,
+S045,Q10,C,I turned them into fractions with the same denominator 6 and then added the tops.
+S046,Q1,A,
+S046,Q2,B,I guessed
+S046,Q3,D,
+S046,Q4,A,
+S046,Q5,,
+S046,Q6,C,
+S046,Q7,B,
+S046,Q8,D,my friend said so
+S046,Q9,B,
+S046,Q10,C,"first make equal size pieces using 6, then add how many pieces"
+S047,Q1,C,
+S047,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S047,Q3,A,
+S047,Q4,,
+S047,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S047,Q6,C,
+S047,Q7,C,
+S047,Q8,C,
+S047,Q9,A,
+S047,Q10,B,made the bottom 6 and added the tops
+S048,Q1,B,
+S048,Q2,D,my friend said so
+S048,Q3,,
+S048,Q4,D,
+S048,Q5,D,idk
+S048,Q6,D,
+S048,Q7,D,
+S048,Q8,D,because of the numbers
+S048,Q9,A,
+S048,Q10,B,made the bottom 6 and added the tops
+S049,Q1,A,
+S049,Q2,C,I only changed the denominator
+S049,Q3,D,
+S049,Q4,A,
+S049,Q5,A,9 is bigger than 7
+S049,Q6,B,
+S049,Q7,A,
+S049,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S049,Q9,C,
+S049,Q10,A,2+1 and 3+6
+S050,Q1,D,
+S050,Q2,D,because of the numbers
+S050,Q3,D,
+S050,Q4,A,
+S050,Q5,B,fewer slices so each slice is bigger
+S050,Q6,C,
+S050,Q7,A,
+S050,Q8,D,idk
+S050,Q9,C,
+S050,Q10,A,2+1 and 3+6
+S051,Q1,A,
+S051,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S051,Q3,D,
+S051,Q4,A,
+S051,Q5,B,fewer slices so each slice is bigger
+S051,Q6,C,
+S051,Q7,B,
+S051,Q8,A,"first make equal size pieces using 12, then add how many pieces"
+S051,Q9,B,
+S051,Q10,C,it looked right to me
+S052,Q1,A,
+S052,Q2,B,multiply both the top and bottom by 3
+S052,Q3,A,
+S052,Q4,B,
+S052,Q5,A,the one with the bigger denominator is bigger
+S052,Q6,C,
+S052,Q7,A,
+S052,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S052,Q9,C,
+S052,Q10,A,idk
+S053,Q1,A,
+S053,Q2,B,multiply both the top and bottom by 3
+S053,Q3,D,
+S053,Q4,A,
+S053,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S053,Q6,C,
+S053,Q7,A,
+S053,Q8,B,1+2 and 4+3
+S053,Q9,C,
+S053,Q10,A,I added the top numbers and then the bottom numbers
+S054,Q1,A,
+S054,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S054,Q3,D,
+S054,Q4,A,
+S054,Q5,B,fewer slices so each slice is bigger
+S054,Q6,C,
+S054,Q7,A,
+S054,Q8,A,"Rewrite 1/4 and 2/3 so they have the same denominator, then add numerators."
+S054,Q9,A,
+S054,Q10,C,I turned them into fractions with the same denominator 6 and then added the tops.
+S055,Q1,A,
+S055,Q2,C,I only changed the denominator
+S055,Q3,A,
+S055,Q4,A,
+S055,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S055,Q6,C,
+S055,Q7,C,
+S055,Q8,A,I turned them into fractions with the same denominator 12 and then added the tops.
+S055,Q9,A,
+S055,Q10,B,made the bottom 6 and added the tops
+S056,Q1,D,
+S056,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S056,Q3,,
+S056,Q4,B,
+S056,Q5,C,idk
+S056,Q6,C,
+S056,Q7,B,
+S056,Q8,A,"Rewrite 1/4 and 2/3 so they have the same denominator, then add numerators."
+S056,Q9,B,
+S056,Q10,A,2+1 and 3+6
+S057,Q1,A,
+S057,Q2,B,multiply both the top and bottom by 3
+S057,Q3,D,
+S057,Q4,A,
+S057,Q5,,
+S057,Q6,C,
+S057,Q7,A,
+S057,Q8,B,1+2 and 4+3
+S057,Q9,C,
+S057,Q10,,
+S058,Q1,A,
+S058,Q2,B,
+S058,Q3,D,
+S058,Q4,D,
+S058,Q5,A,it has more pieces
+S058,Q6,B,
+S058,Q7,B,
+S058,Q8,B,add numerator with numerator and denominator with denominator
+S058,Q9,B,
+S058,Q10,A,it looked right to me
+S059,Q1,C,
+S059,Q2,C,I only changed the denominator
+S059,Q3,B,
+S059,Q4,D,
+S059,Q5,B,fewer slices so each slice is bigger
+S059,Q6,B,
+S059,Q7,B,
+S059,Q8,C,same denominator then add the numerators 1 and 2
+S059,Q9,A,
+S059,Q10,B,same denominator then add the numerators 2 and 1
+S060,Q1,A,
+S060,Q2,B,2 times 3 and 3 times 3 gives the same fraction
+S060,Q3,D,
+S060,Q4,A,
+S060,Q5,B,2/7 because the pieces are bigger when there are fewer of them
+S060,Q6,C,
+S060,Q7,B,
+S060,Q8,A,"Rewrite 1/4 and 2/3 so they have the same denominator, then add numerators."
+S060,Q9,B,
+S060,Q10,C,"Rewrite 2/3 and 1/6 so they have the same denominator, then add numerators."

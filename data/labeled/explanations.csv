@@ -1,0 +1,401 @@
+example_id,question_id,explanation,label,source,group_id
+correct_reasoning-F01-P1-dev,C-ADD-1,"I changed both fractions to 6ths. 1/2 is 3/6 and 1/3 is 2/6, so the answer is 5/6.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F01
+correct_reasoning-F01-P1-test,C-ADD-6,"I changed both fractions to 14ths. 2/7 is 4/14 and 1/2 is 7/14, so the answer is 11/14.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F01
+correct_reasoning-F01-P2-dev,C-ADD-3,"Both need a denominator of 15: 2/5 becomes 6/15, 1/3 becomes 5/15, then add the tops to get 11/15.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F01
+correct_reasoning-F01-P2-test,C-ADD-5,"Both need a denominator of 15: 1/3 becomes 5/15, 1/5 becomes 3/15, then add the tops to get 8/15.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F01
+correct_reasoning-F02-P1-dev,C-ADD-2,"The pieces have to be the same size before you add, so I rewrote both with 12 as the denominator and then added.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F02
+correct_reasoning-F02-P1-test,C-ADD-6,"The pieces have to be the same size before you add, so I rewrote both with 14 as the denominator and then added.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F02
+correct_reasoning-F02-P2-dev,C-ADD-1,you cant add different sized pieces. i made them the same size pieces first then added them,correct_reasoning,synthetic_template_author_written,correct_reasoning-F02
+correct_reasoning-F02-P2-test,C-ADD-6,you cant add different sized pieces. i made them the same size pieces first then added them,correct_reasoning,synthetic_template_author_written,correct_reasoning-F02
+correct_reasoning-F03-P1-dev,C-ADD-1,"I multiplied the top and bottom of 1/2 by 3 and the top and bottom of 1/3 by 2, then added the numerators and kept the denominator 6.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F03
+correct_reasoning-F03-P1-test,C-ADD-5,"I multiplied the top and bottom of 1/3 by 5 and the top and bottom of 1/5 by 3, then added the numerators and kept the denominator 15.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F03
+correct_reasoning-F03-P2-dev,C-ADD-3,"Multiply numerator and denominator by the same number for each fraction so they share a denominator, then add only the numerators.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F03
+correct_reasoning-F03-P2-test,C-ADD-6,"Multiply numerator and denominator by the same number for each fraction so they share a denominator, then add only the numerators.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F03
+correct_reasoning-F04-P1-dev,C-ADD-3,"I found the least common multiple of 5 and 3, which is 15, used it as the common denominator and added the equivalent fractions.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F04
+correct_reasoning-F04-P1-test,C-ADD-6,"I found the least common multiple of 7 and 2, which is 14, used it as the common denominator and added the equivalent fractions.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F04
+correct_reasoning-F04-P2-dev,C-ADD-3,LCM of the bottoms is 15. Convert each fraction to an equal fraction over 15 and add.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F04
+correct_reasoning-F04-P2-test,C-ADD-6,LCM of the bottoms is 14. Convert each fraction to an equal fraction over 14 and add.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F04
+correct_reasoning-F05-P1-dev,C-ADD-3,"My estimate was a bit more than 2/5, and 11/15 makes sense because I converted to a common denominator before adding.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F05
+correct_reasoning-F05-P1-test,C-ADD-5,"My estimate was a bit more than 1/3, and 8/15 makes sense because I converted to a common denominator before adding.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F05
+correct_reasoning-F05-P2-dev,C-ADD-4,"I checked that the answer is bigger than both fractions, which it has to be when you add. I used a common denominator to get it.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F05
+correct_reasoning-F05-P2-test,C-ADD-5,"I checked that the answer is bigger than both fractions, which it has to be when you add. I used a common denominator to get it.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F05
+correct_reasoning-F06-P1-dev,C-EQ-2,"To get from 3 to 9 you multiply by 3, so you multiply the top by 3 too: 6/9.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F06
+correct_reasoning-F06-P1-test,C-EQ-4,"To get from 5 to 15 you multiply by 3, so you multiply the top by 3 too: 6/15.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F06
+correct_reasoning-F06-P2-dev,C-EQ-1,"2 times 4 is 8, so 1 times 4 is 4. Same multiplier top and bottom.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F06
+correct_reasoning-F06-P2-test,C-EQ-5,"3 times 4 is 12, so 1 times 4 is 4. Same multiplier top and bottom.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F06
+correct_reasoning-F07-P1-dev,C-EQ-3,"Whatever you multiply the denominator by you have to multiply the numerator by the same amount, so the fraction stays the same size.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F07
+correct_reasoning-F07-P1-test,C-EQ-5,"Whatever you multiply the denominator by you have to multiply the numerator by the same amount, so the fraction stays the same size.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F07
+correct_reasoning-F07-P2-dev,C-EQ-2,"you have to times the top and bottom by the same number, 3, so its still the same amount",correct_reasoning,synthetic_template_author_written,correct_reasoning-F07
+correct_reasoning-F07-P2-test,C-EQ-5,"you have to times the top and bottom by the same number, 4, so its still the same amount",correct_reasoning,synthetic_template_author_written,correct_reasoning-F07
+correct_reasoning-F08-P1-dev,C-EQ-2,I drew 2/3 and split each part into 3 smaller pieces. Now there are 9 pieces and 6 are shaded.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F08
+correct_reasoning-F08-P1-test,C-EQ-4,I drew 2/5 and split each part into 3 smaller pieces. Now there are 15 pieces and 6 are shaded.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F08
+correct_reasoning-F08-P2-dev,C-EQ-2,"If you cut every piece into 3 pieces, the shaded part is 6 of 9 pieces, so it is the same amount.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F08
+correct_reasoning-F08-P2-test,C-EQ-4,"If you cut every piece into 3 pieces, the shaded part is 6 of 15 pieces, so it is the same amount.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F08
+correct_reasoning-F09-P1-dev,C-EQ-1,"4/8 simplifies back to 1/2 when you divide top and bottom by 4, so they are equivalent.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F09
+correct_reasoning-F09-P1-test,C-EQ-5,"4/12 simplifies back to 1/3 when you divide top and bottom by 4, so they are equivalent.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F09
+correct_reasoning-F09-P2-dev,C-EQ-3,"I checked by dividing 6 and 10 by 2, which gives 3/5 again.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F09
+correct_reasoning-F09-P2-test,C-EQ-4,"I checked by dividing 6 and 15 by 3, which gives 2/5 again.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F09
+correct_reasoning-F10-P1-dev,C-CMP-3,"1/4 is bigger because the whole is cut into fewer pieces, so each piece is larger.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F10
+correct_reasoning-F10-P1-test,C-CMP-5,"1/2 is bigger because the whole is cut into fewer pieces, so each piece is larger.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F10
+correct_reasoning-F10-P2-dev,C-CMP-1,"Fewer pieces means each piece is bigger, so 1/3 is more than 1/5.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F10
+correct_reasoning-F10-P2-test,C-CMP-5,"Fewer pieces means each piece is bigger, so 1/2 is more than 1/9.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F10
+correct_reasoning-F11-P1-dev,C-CMP-1,"Both have 1 on top, so the one with the smaller denominator is bigger. It is 1/3.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F11
+correct_reasoning-F11-P1-test,C-CMP-5,"Both have 1 on top, so the one with the smaller denominator is bigger. It is 1/2.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F11
+correct_reasoning-F11-P2-dev,C-CMP-3,"Same numerators, so compare the denominators: a smaller denominator gives a larger fraction.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F11
+correct_reasoning-F11-P2-test,C-CMP-4,"Same numerators, so compare the denominators: a smaller denominator gives a larger fraction.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F11
+correct_reasoning-F12-P1-dev,C-CMP-1,"If you share a pizza between 3 people you get more than sharing it between 5 people, so 1/3 is larger.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F12
+correct_reasoning-F12-P1-test,C-CMP-5,"If you share a pizza between 2 people you get more than sharing it between 9 people, so 1/2 is larger.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F12
+correct_reasoning-F12-P2-dev,C-CMP-2,"Sharing with fewer people gives everyone a bigger slice, that's why 2/7 is more.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F12
+correct_reasoning-F12-P2-test,C-CMP-5,"Sharing with fewer people gives everyone a bigger slice, that's why 1/2 is more.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F12
+correct_reasoning-F13-P1-dev,C-ADD-3,I used a number line split into 15 parts and counted 6 parts then 5 more parts.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F13
+correct_reasoning-F13-P1-test,C-ADD-6,I used a number line split into 14 parts and counted 4 parts then 7 more parts.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F13
+correct_reasoning-F13-P2-dev,C-ADD-4,"On a number line marked in 12ths, I jumped 9 and then 2, landing on 11/12.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F13
+correct_reasoning-F13-P2-test,C-ADD-5,"On a number line marked in 15ths, I jumped 5 and then 3, landing on 8/15.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F13
+correct_reasoning-F14-P1-dev,C-ADD-2,"The sum should be less than 1 here, and 11/12 is, so I trust converting to 12ths.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F14
+correct_reasoning-F14-P1-test,C-ADD-5,"The sum should be less than 1 here, and 8/15 is, so I trust converting to 15ths.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F14
+correct_reasoning-F14-P2-dev,C-ADD-2,"Sanity check: each fraction is under one half or close, so the total is reasonable. I used equivalent fractions with denominator 12.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F14
+correct_reasoning-F14-P2-test,C-ADD-5,"Sanity check: each fraction is under one half or close, so the total is reasonable. I used equivalent fractions with denominator 15.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F14
+correct_reasoning-F15-P1-dev,C-ADD-3,"Equivalent fractions first, then add. 2/5 = 6/15, 1/3 = 5/15.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F15
+correct_reasoning-F15-P1-test,C-ADD-5,"Equivalent fractions first, then add. 1/3 = 5/15, 1/5 = 3/15.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F15
+correct_reasoning-F15-P2-dev,C-ADD-3,I renamed each fraction as an equal fraction in 15ths and then combined them.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F15
+correct_reasoning-F15-P2-test,C-ADD-6,I renamed each fraction as an equal fraction in 14ths and then combined them.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F15
+correct_reasoning-F16-P1-dev,C-EQ-3,"I scaled 3/5 up by a factor of 2, which is the same as multiplying by 2/2 = 1.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F16
+correct_reasoning-F16-P1-test,C-EQ-5,"I scaled 1/3 up by a factor of 4, which is the same as multiplying by 4/4 = 1.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F16
+correct_reasoning-F16-P2-dev,C-EQ-2,"Multiplying by 3/3 is multiplying by one, so the value doesn't change.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F16
+correct_reasoning-F16-P2-test,C-EQ-5,"Multiplying by 4/4 is multiplying by one, so the value doesn't change.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F16
+correct_reasoning-F17-P1-dev,C-EQ-2,"I used a multiplication table: the 3 row and the 2 row, go across to 9 and read 6 above it.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F17
+correct_reasoning-F17-P1-test,C-EQ-4,"I used a multiplication table: the 5 row and the 2 row, go across to 15 and read 6 above it.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F17
+correct_reasoning-F17-P2-dev,C-EQ-3,"Looking at the times table, 5 times 2 is 10 and 3 times 2 is 6.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F17
+correct_reasoning-F17-P2-test,C-EQ-4,"Looking at the times table, 5 times 3 is 15 and 2 times 3 is 6.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F17
+correct_reasoning-F18-P1-dev,C-EQ-1,"The ratio of top to bottom has to stay the same, so both get scaled by 4.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F18
+correct_reasoning-F18-P1-test,C-EQ-4,"The ratio of top to bottom has to stay the same, so both get scaled by 3.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F18
+correct_reasoning-F18-P2-dev,C-EQ-3,Keeping the same proportion means multiplying both parts by 2.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F18
+correct_reasoning-F18-P2-test,C-EQ-4,Keeping the same proportion means multiplying both parts by 3.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F18
+correct_reasoning-F19-P1-dev,C-CMP-2,On a number line 2/7 is further from zero than 2/9.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F19
+correct_reasoning-F19-P1-test,C-CMP-4,On a number line 3/5 is further from zero than 3/8.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F19
+correct_reasoning-F19-P2-dev,C-CMP-3,I placed both on a number line from 0 to 1 and 1/4 is further right.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F19
+correct_reasoning-F19-P2-test,C-CMP-4,I placed both on a number line from 0 to 1 and 3/5 is further right.,correct_reasoning,synthetic_template_author_written,correct_reasoning-F19
+correct_reasoning-F20-P1-dev,C-CMP-1,"5ths are smaller pieces than 3ths, and both have 1 pieces, so 1/3 is larger.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F20
+correct_reasoning-F20-P1-test,C-CMP-4,"8ths are smaller pieces than 5ths, and both have 3 pieces, so 3/5 is larger.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F20
+correct_reasoning-F20-P2-dev,C-CMP-2,"Each 9th is tiny compared to a 7th, so the same number of pieces is worth less.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F20
+correct_reasoning-F20-P2-test,C-CMP-5,"Each 9th is tiny compared to a 2th, so the same number of pieces is worth less.",correct_reasoning,synthetic_template_author_written,correct_reasoning-F20
+add_across-F01-P1-dev,C-ADD-4,"I added the numerators 3 + 1 = 4 and the denominators 4 + 6 = 10, so 4/10.",add_across,synthetic_template_author_written,add_across-F01
+add_across-F01-P1-test,C-ADD-5,"I added the numerators 1 + 1 = 2 and the denominators 3 + 5 = 8, so 2/8.",add_across,synthetic_template_author_written,add_across-F01
+add_across-F01-P2-dev,C-ADD-1,"top plus top is 2 and bottom plus bottom is 5, so I got 2/5",add_across,synthetic_template_author_written,add_across-F01
+add_across-F01-P2-test,C-ADD-6,"top plus top is 3 and bottom plus bottom is 9, so I got 3/9",add_across,synthetic_template_author_written,add_across-F01
+add_across-F02-P1-dev,C-ADD-3,You add the tops together and the bottoms together.,add_across,synthetic_template_author_written,add_across-F02
+add_across-F02-P1-test,C-ADD-6,You add the tops together and the bottoms together.,add_across,synthetic_template_author_written,add_across-F02
+add_across-F02-P2-dev,C-ADD-1,"just add straight across, numerators then denominators",add_across,synthetic_template_author_written,add_across-F02
+add_across-F02-P2-test,C-ADD-5,"just add straight across, numerators then denominators",add_across,synthetic_template_author_written,add_across-F02
+add_across-F03-P1-dev,C-ADD-4,"Adding fractions is like adding two numbers, so I added both parts.",add_across,synthetic_template_author_written,add_across-F03
+add_across-F03-P1-test,C-ADD-6,"Adding fractions is like adding two numbers, so I added both parts.",add_across,synthetic_template_author_written,add_across-F03
+add_across-F03-P2-dev,C-ADD-2,I treated the top numbers and bottom numbers as two separate sums.,add_across,synthetic_template_author_written,add_across-F03
+add_across-F03-P2-test,C-ADD-6,I treated the top numbers and bottom numbers as two separate sums.,add_across,synthetic_template_author_written,add_across-F03
+add_across-F04-P1-dev,C-ADD-4,"3 plus 1 is 4, 4 plus 6 is 10. Answer 4/10.",add_across,synthetic_template_author_written,add_across-F04
+add_across-F04-P1-test,C-ADD-5,"1 plus 1 is 2, 3 plus 5 is 8. Answer 2/8.",add_across,synthetic_template_author_written,add_across-F04
+add_across-F04-P2-dev,C-ADD-4,I did 3+1 on top and 4+6 on the bottom.,add_across,synthetic_template_author_written,add_across-F04
+add_across-F04-P2-test,C-ADD-5,I did 1+1 on top and 3+5 on the bottom.,add_across,synthetic_template_author_written,add_across-F04
+add_across-F05-P1-dev,C-ADD-1,Since it's an addition problem I added everything: the numerators and the denominators.,add_across,synthetic_template_author_written,add_across-F05
+add_across-F05-P1-test,C-ADD-6,Since it's an addition problem I added everything: the numerators and the denominators.,add_across,synthetic_template_author_written,add_across-F05
+add_across-F05-P2-dev,C-ADD-3,It says plus so I added all of the numbers in the fractions.,add_across,synthetic_template_author_written,add_across-F05
+add_across-F05-P2-test,C-ADD-5,It says plus so I added all of the numbers in the fractions.,add_across,synthetic_template_author_written,add_across-F05
+add_across-F06-P1-dev,C-ADD-4,I put the sum of the numerators over the sum of the denominators.,add_across,synthetic_template_author_written,add_across-F06
+add_across-F06-P1-test,C-ADD-5,I put the sum of the numerators over the sum of the denominators.,add_across,synthetic_template_author_written,add_across-F06
+add_across-F06-P2-dev,C-ADD-4,The new fraction is the numerators added over the denominators added.,add_across,synthetic_template_author_written,add_across-F06
+add_across-F06-P2-test,C-ADD-5,The new fraction is the numerators added over the denominators added.,add_across,synthetic_template_author_written,add_across-F06
+add_across-F07-P1-dev,C-ADD-4,I lined up the fractions and added the top row and the bottom row.,add_across,synthetic_template_author_written,add_across-F07
+add_across-F07-P1-test,C-ADD-6,I lined up the fractions and added the top row and the bottom row.,add_across,synthetic_template_author_written,add_across-F07
+add_across-F07-P2-dev,C-ADD-4,"Add the top row, then add the bottom row, and that is the fraction.",add_across,synthetic_template_author_written,add_across-F07
+add_across-F07-P2-test,C-ADD-6,"Add the top row, then add the bottom row, and that is the fraction.",add_across,synthetic_template_author_written,add_across-F07
+add_across-F08-P1-dev,C-ADD-2,"It's like multiplying fractions where you go straight across, but with plus.",add_across,synthetic_template_author_written,add_across-F08
+add_across-F08-P1-test,C-ADD-6,"It's like multiplying fractions where you go straight across, but with plus.",add_across,synthetic_template_author_written,add_across-F08
+add_across-F08-P2-dev,C-ADD-2,"When you multiply fractions you go across, so for adding I also went across.",add_across,synthetic_template_author_written,add_across-F08
+add_across-F08-P2-test,C-ADD-6,"When you multiply fractions you go across, so for adding I also went across.",add_across,synthetic_template_author_written,add_across-F08
+add_across-F09-P1-dev,C-ADD-3,"You don't need a common denominator, you just add the denominators too.",add_across,synthetic_template_author_written,add_across-F09
+add_across-F09-P1-test,C-ADD-5,"You don't need a common denominator, you just add the denominators too.",add_across,synthetic_template_author_written,add_across-F09
+add_across-F09-P2-dev,C-ADD-3,"no need to change anything, the bottoms get added like the tops",add_across,synthetic_template_author_written,add_across-F09
+add_across-F09-P2-test,C-ADD-6,"no need to change anything, the bottoms get added like the tops",add_across,synthetic_template_author_written,add_across-F09
+add_across-F10-P1-dev,C-ADD-1,I combined 2 pieces and 3 pieces to get 5 pieces and 2 of them are shaded.,add_across,synthetic_template_author_written,add_across-F10
+add_across-F10-P1-test,C-ADD-5,I combined 3 pieces and 5 pieces to get 8 pieces and 2 of them are shaded.,add_across,synthetic_template_author_written,add_across-F10
+add_across-F10-P2-dev,C-ADD-1,There are 5 pieces altogether and 2 are shaded so it's 2/5.,add_across,synthetic_template_author_written,add_across-F10
+add_across-F10-P2-test,C-ADD-5,There are 8 pieces altogether and 2 are shaded so it's 2/8.,add_across,synthetic_template_author_written,add_across-F10
+add_across-F11-P1-dev,C-ADD-2,the answer is 3 over 7,add_across,synthetic_template_author_written,add_across-F11
+add_across-F11-P1-test,C-ADD-6,the answer is 3 over 9,add_across,synthetic_template_author_written,add_across-F11
+add_across-F11-P2-dev,C-ADD-3,i got 3 on top and 8 on bottom,add_across,synthetic_template_author_written,add_across-F11
+add_across-F11-P2-test,C-ADD-5,i got 2 on top and 8 on bottom,add_across,synthetic_template_author_written,add_across-F11
+add_across-F12-P1-dev,C-ADD-4,Add the parts and add the wholes.,add_across,synthetic_template_author_written,add_across-F12
+add_across-F12-P1-test,C-ADD-6,Add the parts and add the wholes.,add_across,synthetic_template_author_written,add_across-F12
+add_across-F12-P2-dev,C-ADD-1,I added the parts together and the wholes together to get the total.,add_across,synthetic_template_author_written,add_across-F12
+add_across-F12-P2-test,C-ADD-6,I added the parts together and the wholes together to get the total.,add_across,synthetic_template_author_written,add_across-F12
+add_across-F13-P1-dev,C-ADD-3,3/8 because you combine the numerators and you combine the denominators.,add_across,synthetic_template_author_written,add_across-F13
+add_across-F13-P1-test,C-ADD-6,3/9 because you combine the numerators and you combine the denominators.,add_across,synthetic_template_author_written,add_across-F13
+add_across-F13-P2-dev,C-ADD-3,"combine numerators, combine denominators",add_across,synthetic_template_author_written,add_across-F13
+add_across-F13-P2-test,C-ADD-6,"combine numerators, combine denominators",add_across,synthetic_template_author_written,add_across-F13
+add_across-F14-P1-dev,C-ADD-1,The denominators are different so I just added them like the numerators.,add_across,synthetic_template_author_written,add_across-F14
+add_across-F14-P1-test,C-ADD-6,The denominators are different so I just added them like the numerators.,add_across,synthetic_template_author_written,add_across-F14
+add_across-F14-P2-dev,C-ADD-4,"Different bottoms, so I added the bottoms as well.",add_across,synthetic_template_author_written,add_across-F14
+add_across-F14-P2-test,C-ADD-5,"Different bottoms, so I added the bottoms as well.",add_across,synthetic_template_author_written,add_across-F14
+add_across-F15-P1-dev,C-ADD-3,I added 2/5 and 1/3 like two scores: 2 out of 5 and 1 out of 3 makes 3 out of 8.,add_across,synthetic_template_author_written,add_across-F15
+add_across-F15-P1-test,C-ADD-5,I added 1/3 and 1/5 like two scores: 1 out of 3 and 1 out of 5 makes 2 out of 8.,add_across,synthetic_template_author_written,add_across-F15
+add_across-F15-P2-dev,C-ADD-2,"Like test scores, 1 out of 4 plus 2 out of 3 is 3 out of 7.",add_across,synthetic_template_author_written,add_across-F15
+add_across-F15-P2-test,C-ADD-5,"Like test scores, 1 out of 3 plus 1 out of 5 is 2 out of 8.",add_across,synthetic_template_author_written,add_across-F15
+add_across-F16-P1-dev,C-ADD-4,Numerator plus numerator equals the new numerator and denominator plus denominator equals the new denominator.,add_across,synthetic_template_author_written,add_across-F16
+add_across-F16-P1-test,C-ADD-5,Numerator plus numerator equals the new numerator and denominator plus denominator equals the new denominator.,add_across,synthetic_template_author_written,add_across-F16
+add_across-F16-P2-dev,C-ADD-2,"new top = top + top, new bottom = bottom + bottom",add_across,synthetic_template_author_written,add_across-F16
+add_across-F16-P2-test,C-ADD-5,"new top = top + top, new bottom = bottom + bottom",add_across,synthetic_template_author_written,add_across-F16
+add_across-F17-P1-dev,C-ADD-4,I just did the plus on both levels of the fraction.,add_across,synthetic_template_author_written,add_across-F17
+add_across-F17-P1-test,C-ADD-6,I just did the plus on both levels of the fraction.,add_across,synthetic_template_author_written,add_across-F17
+add_across-F17-P2-dev,C-ADD-1,Did the addition on the top level and the bottom level.,add_across,synthetic_template_author_written,add_across-F17
+add_across-F17-P2-test,C-ADD-5,Did the addition on the top level and the bottom level.,add_across,synthetic_template_author_written,add_across-F17
+add_across-F18-P1-dev,C-ADD-4,4/10 since 3 and 1 make 4 and 4 and 6 make 10.,add_across,synthetic_template_author_written,add_across-F18
+add_across-F18-P1-test,C-ADD-5,2/8 since 1 and 1 make 2 and 3 and 5 make 8.,add_across,synthetic_template_author_written,add_across-F18
+add_across-F18-P2-dev,C-ADD-4,3 and 1 make 4; 4 and 6 make 10.,add_across,synthetic_template_author_written,add_across-F18
+add_across-F18-P2-test,C-ADD-5,1 and 1 make 2; 3 and 5 make 8.,add_across,synthetic_template_author_written,add_across-F18
+add_across-F19-P1-dev,C-ADD-4,"Both fractions get added the same way as whole numbers, top with top and bottom with bottom.",add_across,synthetic_template_author_written,add_across-F19
+add_across-F19-P1-test,C-ADD-5,"Both fractions get added the same way as whole numbers, top with top and bottom with bottom.",add_across,synthetic_template_author_written,add_across-F19
+add_across-F19-P2-dev,C-ADD-2,"I added them like whole numbers, tops together and bottoms together.",add_across,synthetic_template_author_written,add_across-F19
+add_across-F19-P2-test,C-ADD-6,"I added them like whole numbers, tops together and bottoms together.",add_across,synthetic_template_author_written,add_across-F19
+add_across-F20-P1-dev,C-ADD-1,I added the two fractions straight across without changing them first.,add_across,synthetic_template_author_written,add_across-F20
+add_across-F20-P1-test,C-ADD-6,I added the two fractions straight across without changing them first.,add_across,synthetic_template_author_written,add_across-F20
+add_across-F20-P2-dev,C-ADD-3,"Didn't change anything, just added across.",add_across,synthetic_template_author_written,add_across-F20
+add_across-F20-P2-test,C-ADD-6,"Didn't change anything, just added across.",add_across,synthetic_template_author_written,add_across-F20
+unscaled_numerator-F01-P1-dev,C-ADD-4,I made the denominators both 12 and then added 3 + 1 to get 4/12.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F01
+unscaled_numerator-F01-P1-test,C-ADD-6,I made the denominators both 14 and then added 2 + 1 to get 3/14.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F01
+unscaled_numerator-F01-P2-dev,C-ADD-2,"Common denominator is 12, then 1 plus 2 is 3, so 3/12.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F01
+unscaled_numerator-F01-P2-test,C-ADD-5,"Common denominator is 15, then 1 plus 1 is 2, so 2/15.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F01
+unscaled_numerator-F02-P1-dev,C-ADD-2,I changed the bottoms to be the same but kept the tops the same.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F02
+unscaled_numerator-F02-P1-test,C-ADD-6,I changed the bottoms to be the same but kept the tops the same.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F02
+unscaled_numerator-F02-P2-dev,C-ADD-2,only the denominators need to match so I didn't change the numerators,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F02
+unscaled_numerator-F02-P2-test,C-ADD-5,only the denominators need to match so I didn't change the numerators,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F02
+unscaled_numerator-F03-P1-dev,C-ADD-2,I multiplied the denominators to get 12 and added the numerators to get 3.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F03
+unscaled_numerator-F03-P1-test,C-ADD-5,I multiplied the denominators to get 15 and added the numerators to get 2.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F03
+unscaled_numerator-F03-P2-dev,C-ADD-1,"Bottom numbers times each other gives 6, then add the top numbers.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F03
+unscaled_numerator-F03-P2-test,C-ADD-5,"Bottom numbers times each other gives 15, then add the top numbers.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F03
+unscaled_numerator-F04-P1-dev,C-ADD-4,The denominator becomes 12 because both go into it. The numerators stay 3 and 1.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F04
+unscaled_numerator-F04-P1-test,C-ADD-6,The denominator becomes 14 because both go into it. The numerators stay 2 and 1.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F04
+unscaled_numerator-F04-P2-dev,C-ADD-3,"Both go into 15, so that is the denominator. The numerators don't change.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F04
+unscaled_numerator-F04-P2-test,C-ADD-5,"Both go into 15, so that is the denominator. The numerators don't change.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F04
+unscaled_numerator-F05-P1-dev,C-ADD-3,"You only change the denominator to the common one, the numerator stays as it is.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F05
+unscaled_numerator-F05-P1-test,C-ADD-5,"You only change the denominator to the common one, the numerator stays as it is.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F05
+unscaled_numerator-F05-P2-dev,C-ADD-4,"Change the denominator, keep the numerator.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F05
+unscaled_numerator-F05-P2-test,C-ADD-6,"Change the denominator, keep the numerator.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F05
+unscaled_numerator-F06-P1-dev,C-ADD-4,"I rewrote 3/4 as 3/12 and 1/6 as 1/12, then added.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F06
+unscaled_numerator-F06-P1-test,C-ADD-5,"I rewrote 1/3 as 1/15 and 1/5 as 1/15, then added.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F06
+unscaled_numerator-F06-P2-dev,C-ADD-2,1/4 turned into 1/12 and 2/3 turned into 2/12.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F06
+unscaled_numerator-F06-P2-test,C-ADD-6,2/7 turned into 2/14 and 1/2 turned into 1/14.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F06
+unscaled_numerator-F07-P1-dev,C-ADD-2,I found the common denominator and put the numerators on top of it.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F07
+unscaled_numerator-F07-P1-test,C-ADD-5,I found the common denominator and put the numerators on top of it.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F07
+unscaled_numerator-F07-P2-dev,C-ADD-1,found the LCD and then added the numerators over it,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F07
+unscaled_numerator-F07-P2-test,C-ADD-5,found the LCD and then added the numerators over it,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F07
+unscaled_numerator-F08-P1-dev,C-EQ-1,"The new denominator is 8 and the numerator stays 1, so 1/8.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F08
+unscaled_numerator-F08-P1-test,C-EQ-4,"The new denominator is 15 and the numerator stays 2, so 2/15.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F08
+unscaled_numerator-F08-P2-dev,C-EQ-3,I put 3 over 10 because the top doesn't change.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F08
+unscaled_numerator-F08-P2-test,C-EQ-5,I put 1 over 12 because the top doesn't change.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F08
+unscaled_numerator-F09-P1-dev,C-EQ-2,You just change the bottom number to 9.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F09
+unscaled_numerator-F09-P1-test,C-EQ-4,You just change the bottom number to 15.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F09
+unscaled_numerator-F09-P2-dev,C-EQ-3,"only the bottom number changes, the top is the same",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F09
+unscaled_numerator-F09-P2-test,C-EQ-4,"only the bottom number changes, the top is the same",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F09
+unscaled_numerator-F10-P1-dev,C-EQ-2,I multiplied the denominator by 3 to get 9. The numerator is still 2.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F10
+unscaled_numerator-F10-P1-test,C-EQ-4,I multiplied the denominator by 3 to get 15. The numerator is still 2.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F10
+unscaled_numerator-F10-P2-dev,C-EQ-2,"3 times 3 is 9, numerator stays 2",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F10
+unscaled_numerator-F10-P2-test,C-EQ-5,"3 times 4 is 12, numerator stays 1",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F10
+unscaled_numerator-F11-P1-dev,C-EQ-2,"Equivalent means same numerator, different denominator.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F11
+unscaled_numerator-F11-P1-test,C-EQ-5,"Equivalent means same numerator, different denominator.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F11
+unscaled_numerator-F11-P2-dev,C-EQ-2,An equivalent fraction keeps the same top number and has a new bottom number.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F11
+unscaled_numerator-F11-P2-test,C-EQ-5,An equivalent fraction keeps the same top number and has a new bottom number.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F11
+unscaled_numerator-F12-P1-dev,C-EQ-2,The question gives the new denominator so I just wrote it under the old numerator.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F12
+unscaled_numerator-F12-P1-test,C-EQ-4,The question gives the new denominator so I just wrote it under the old numerator.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F12
+unscaled_numerator-F12-P2-dev,C-EQ-3,I kept the numerator and wrote the denominator they asked for.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F12
+unscaled_numerator-F12-P2-test,C-EQ-5,I kept the numerator and wrote the denominator they asked for.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F12
+unscaled_numerator-F13-P1-dev,C-ADD-2,"I made both fractions out of 12 and kept 1 and 2 on top, giving 3/12.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F13
+unscaled_numerator-F13-P1-test,C-ADD-6,"I made both fractions out of 14 and kept 2 and 1 on top, giving 3/14.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F13
+unscaled_numerator-F13-P2-dev,C-ADD-2,"Out of 12, the tops are still 1 and 2, so 3/12.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F13
+unscaled_numerator-F13-P2-test,C-ADD-6,"Out of 14, the tops are still 2 and 1, so 3/14.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F13
+unscaled_numerator-F14-P1-dev,C-ADD-4,"The denominators have to be the same to add, so I made them 12. Then 3 + 1.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F14
+unscaled_numerator-F14-P1-test,C-ADD-5,"The denominators have to be the same to add, so I made them 15. Then 1 + 1.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F14
+unscaled_numerator-F14-P2-dev,C-ADD-3,"Made the denominators equal at 15, then added the original numerators.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F14
+unscaled_numerator-F14-P2-test,C-ADD-5,"Made the denominators equal at 15, then added the original numerators.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F14
+unscaled_numerator-F15-P1-dev,C-ADD-1,I multiplied the bottom numbers by each other but the top numbers just get added.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F15
+unscaled_numerator-F15-P1-test,C-ADD-5,I multiplied the bottom numbers by each other but the top numbers just get added.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F15
+unscaled_numerator-F15-P2-dev,C-ADD-2,The bottoms get multiplied together and the tops get added.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F15
+unscaled_numerator-F15-P2-test,C-ADD-6,The bottoms get multiplied together and the tops get added.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F15
+unscaled_numerator-F16-P1-dev,C-ADD-1,"The numerator counts how many pieces there are, so 1 piece and 1 pieces make 2 pieces of size 6.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F16
+unscaled_numerator-F16-P1-test,C-ADD-5,"The numerator counts how many pieces there are, so 1 piece and 1 pieces make 2 pieces of size 15.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F16
+unscaled_numerator-F16-P2-dev,C-ADD-3,"2 piece plus 1 pieces is 3 pieces, and I wrote them over 15.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F16
+unscaled_numerator-F16-P2-test,C-ADD-5,"1 piece plus 1 pieces is 2 pieces, and I wrote them over 15.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F16
+unscaled_numerator-F17-P1-dev,C-ADD-3,Found the common denominator 15 and left the numerators alone.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F17
+unscaled_numerator-F17-P1-test,C-ADD-5,Found the common denominator 15 and left the numerators alone.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F17
+unscaled_numerator-F17-P2-dev,C-ADD-4,left the numerators alone after finding the common denominator,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F17
+unscaled_numerator-F17-P2-test,C-ADD-6,left the numerators alone after finding the common denominator,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F17
+unscaled_numerator-F18-P1-dev,C-EQ-2,The numerator doesn't need to change when the denominator changes to 9.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F18
+unscaled_numerator-F18-P1-test,C-EQ-4,The numerator doesn't need to change when the denominator changes to 15.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F18
+unscaled_numerator-F18-P2-dev,C-EQ-2,Changing the denominator to 9 doesn't change the numerator.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F18
+unscaled_numerator-F18-P2-test,C-EQ-5,Changing the denominator to 12 doesn't change the numerator.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F18
+unscaled_numerator-F19-P1-dev,C-EQ-1,"I just replaced 2 with 8, so it's 1/8.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F19
+unscaled_numerator-F19-P1-test,C-EQ-5,"I just replaced 3 with 12, so it's 1/12.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F19
+unscaled_numerator-F19-P2-dev,C-EQ-2,Swapped the bottom 3 for 9 and kept 2.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F19
+unscaled_numerator-F19-P2-test,C-EQ-5,Swapped the bottom 3 for 12 and kept 1.,unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F19
+unscaled_numerator-F20-P1-dev,C-EQ-2,"It's the same number of pieces, 2, just out of 9 now.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F20
+unscaled_numerator-F20-P1-test,C-EQ-4,"It's the same number of pieces, 2, just out of 15 now.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F20
+unscaled_numerator-F20-P2-dev,C-EQ-1,"Still 1 pieces, but out of 8.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F20
+unscaled_numerator-F20-P2-test,C-EQ-5,"Still 1 pieces, but out of 12.",unscaled_numerator,synthetic_template_author_written,unscaled_numerator-F20
+additive_equivalence-F01-P1-dev,C-EQ-1,"I added 6 to the bottom to get 8, so I added 6 to the top too: 7/8.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F01
+additive_equivalence-F01-P1-test,C-EQ-5,"I added 9 to the bottom to get 12, so I added 9 to the top too: 10/12.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F01
+additive_equivalence-F01-P2-dev,C-EQ-1,"2 plus 6 is 8, and 1 plus 6 is 7.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F01
+additive_equivalence-F01-P2-test,C-EQ-5,"3 plus 9 is 12, and 1 plus 9 is 10.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F01
+additive_equivalence-F02-P1-dev,C-EQ-2,Whatever you add to the bottom you add to the top.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F02
+additive_equivalence-F02-P1-test,C-EQ-4,Whatever you add to the bottom you add to the top.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F02
+additive_equivalence-F02-P2-dev,C-EQ-3,you have to add the same amount to the numerator and denominator,additive_equivalence,synthetic_template_author_written,additive_equivalence-F02
+additive_equivalence-F02-P2-test,C-EQ-4,you have to add the same amount to the numerator and denominator,additive_equivalence,synthetic_template_author_written,additive_equivalence-F02
+additive_equivalence-F03-P1-dev,C-EQ-3,The denominator went up by 5 so the numerator goes up by 5.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F03
+additive_equivalence-F03-P1-test,C-EQ-4,The denominator went up by 10 so the numerator goes up by 10.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F03
+additive_equivalence-F03-P2-dev,C-EQ-1,"Bottom went up 6, so top goes up 6 as well.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F03
+additive_equivalence-F03-P2-test,C-EQ-4,"Bottom went up 10, so top goes up 10 as well.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F03
+additive_equivalence-F04-P1-dev,C-EQ-1,"It's 6 more on the bottom, so it has to be 6 more on the top to stay equal.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F04
+additive_equivalence-F04-P1-test,C-EQ-4,"It's 10 more on the bottom, so it has to be 10 more on the top to stay equal.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F04
+additive_equivalence-F04-P2-dev,C-EQ-2,To keep it fair I added 6 to both numbers.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F04
+additive_equivalence-F04-P2-test,C-EQ-4,To keep it fair I added 10 to both numbers.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F04
+additive_equivalence-F05-P1-dev,C-EQ-3,"I counted up from 5 to 10, that's 5, then counted up 5 from 3.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F05
+additive_equivalence-F05-P1-test,C-EQ-4,"I counted up from 5 to 15, that's 10, then counted up 10 from 2.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F05
+additive_equivalence-F05-P2-dev,C-EQ-1,"Counting on from 2 to 8 is 6 steps, so I counted on 6 steps from 1 too.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F05
+additive_equivalence-F05-P2-test,C-EQ-5,"Counting on from 3 to 12 is 9 steps, so I counted on 9 steps from 1 too.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F05
+additive_equivalence-F06-P1-dev,C-EQ-3,"Doing the same thing to the top and bottom keeps the fraction the same, so I added 5 to both.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F06
+additive_equivalence-F06-P1-test,C-EQ-4,"Doing the same thing to the top and bottom keeps the fraction the same, so I added 10 to both.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F06
+additive_equivalence-F06-P2-dev,C-EQ-1,"If you do the same to both numbers it stays equal, so plus 6 on each.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F06
+additive_equivalence-F06-P2-test,C-EQ-5,"If you do the same to both numbers it stays equal, so plus 9 on each.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F06
+additive_equivalence-F07-P1-dev,C-EQ-3,The difference between the numerator and denominator stays the same in equivalent fractions.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F07
+additive_equivalence-F07-P1-test,C-EQ-5,The difference between the numerator and denominator stays the same in equivalent fractions.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F07
+additive_equivalence-F07-P2-dev,C-EQ-2,"In 2/3 the gap between top and bottom is 1, so in the new fraction the gap is still 1.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F07
+additive_equivalence-F07-P2-test,C-EQ-4,"In 2/5 the gap between top and bottom is 3, so in the new fraction the gap is still 3.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F07
+additive_equivalence-F08-P1-dev,C-EQ-2,8/9 because I added 6 to 2 and to 3.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F08
+additive_equivalence-F08-P1-test,C-EQ-5,10/12 because I added 9 to 1 and to 3.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F08
+additive_equivalence-F08-P2-dev,C-EQ-1,plus 6 on top and plus 6 on bottom gives 7/8,additive_equivalence,synthetic_template_author_written,additive_equivalence-F08
+additive_equivalence-F08-P2-test,C-EQ-4,plus 10 on top and plus 10 on bottom gives 12/15,additive_equivalence,synthetic_template_author_written,additive_equivalence-F08
+additive_equivalence-F09-P1-dev,C-EQ-1,"I need to get to 8, so I add the difference to both parts.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F09
+additive_equivalence-F09-P1-test,C-EQ-5,"I need to get to 12, so I add the difference to both parts.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F09
+additive_equivalence-F09-P2-dev,C-EQ-2,find how much you need to add to get the new denominator and add that to both,additive_equivalence,synthetic_template_author_written,additive_equivalence-F09
+additive_equivalence-F09-P2-test,C-EQ-4,find how much you need to add to get the new denominator and add that to both,additive_equivalence,synthetic_template_author_written,additive_equivalence-F09
+additive_equivalence-F10-P1-dev,C-EQ-2,You add the same number so the fraction doesn't change.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F10
+additive_equivalence-F10-P1-test,C-EQ-5,You add the same number so the fraction doesn't change.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F10
+additive_equivalence-F10-P2-dev,C-EQ-1,adding the same number to both parts keeps it equal,additive_equivalence,synthetic_template_author_written,additive_equivalence-F10
+additive_equivalence-F10-P2-test,C-EQ-4,adding the same number to both parts keeps it equal,additive_equivalence,synthetic_template_author_written,additive_equivalence-F10
+additive_equivalence-F11-P1-dev,C-EQ-1,the top and bottom both go up by the same amount,additive_equivalence,synthetic_template_author_written,additive_equivalence-F11
+additive_equivalence-F11-P1-test,C-EQ-4,the top and bottom both go up by the same amount,additive_equivalence,synthetic_template_author_written,additive_equivalence-F11
+additive_equivalence-F11-P2-dev,C-EQ-3,both numbers increase by the same amount,additive_equivalence,synthetic_template_author_written,additive_equivalence-F11
+additive_equivalence-F11-P2-test,C-EQ-4,both numbers increase by the same amount,additive_equivalence,synthetic_template_author_written,additive_equivalence-F11
+additive_equivalence-F12-P1-dev,C-EQ-2,I balanced it like an equation by adding 6 to each part of the fraction.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F12
+additive_equivalence-F12-P1-test,C-EQ-5,I balanced it like an equation by adding 9 to each part of the fraction.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F12
+additive_equivalence-F12-P2-dev,C-EQ-1,"Like balancing, I added 6 to the top and the bottom.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F12
+additive_equivalence-F12-P2-test,C-EQ-5,"Like balancing, I added 9 to the top and the bottom.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F12
+additive_equivalence-F13-P1-dev,C-EQ-2,"9 minus 3 is 6, so the numerator is 2 plus 6.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F13
+additive_equivalence-F13-P1-test,C-EQ-4,"15 minus 5 is 10, so the numerator is 2 plus 10.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F13
+additive_equivalence-F13-P2-dev,C-EQ-3,I subtracted 5 from 10 to get 5 and added it to 3.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F13
+additive_equivalence-F13-P2-test,C-EQ-4,I subtracted 5 from 15 to get 10 and added it to 2.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F13
+additive_equivalence-F14-P1-dev,C-EQ-3,Both numbers move up by 5 so it is the same fraction.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F14
+additive_equivalence-F14-P1-test,C-EQ-4,Both numbers move up by 10 so it is the same fraction.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F14
+additive_equivalence-F14-P2-dev,C-EQ-2,if both move up 6 it's still the same fraction,additive_equivalence,synthetic_template_author_written,additive_equivalence-F14
+additive_equivalence-F14-P2-test,C-EQ-5,if both move up 9 it's still the same fraction,additive_equivalence,synthetic_template_author_written,additive_equivalence-F14
+additive_equivalence-F15-P1-dev,C-EQ-3,To make an equivalent fraction you add the same thing to the top and bottom.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F15
+additive_equivalence-F15-P1-test,C-EQ-4,To make an equivalent fraction you add the same thing to the top and bottom.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F15
+additive_equivalence-F15-P2-dev,C-EQ-1,Equivalent fractions come from adding equal amounts to the numerator and denominator.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F15
+additive_equivalence-F15-P2-test,C-EQ-4,Equivalent fractions come from adding equal amounts to the numerator and denominator.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F15
+additive_equivalence-F16-P1-dev,C-EQ-2,"Adding 6 to the bottom made it 9, so adding 6 to 2 makes 8.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F16
+additive_equivalence-F16-P1-test,C-EQ-5,"Adding 9 to the bottom made it 12, so adding 9 to 1 makes 10.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F16
+additive_equivalence-F16-P2-dev,C-EQ-1,plus 6 gets the bottom to 8 and plus 6 gets the top to 7,additive_equivalence,synthetic_template_author_written,additive_equivalence-F16
+additive_equivalence-F16-P2-test,C-EQ-5,plus 9 gets the bottom to 12 and plus 9 gets the top to 10,additive_equivalence,synthetic_template_author_written,additive_equivalence-F16
+additive_equivalence-F17-P1-dev,C-EQ-2,"The top is always 1 less than the bottom, so it's 8/9.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F17
+additive_equivalence-F17-P1-test,C-EQ-4,"The top is always 3 less than the bottom, so it's 12/15.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F17
+additive_equivalence-F17-P2-dev,C-EQ-1,Numerator stays 1 below the denominator.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F17
+additive_equivalence-F17-P2-test,C-EQ-5,Numerator stays 2 below the denominator.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F17
+additive_equivalence-F18-P1-dev,C-EQ-1,I added on to both parts by the same number so it balances.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F18
+additive_equivalence-F18-P1-test,C-EQ-4,I added on to both parts by the same number so it balances.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F18
+additive_equivalence-F18-P2-dev,C-EQ-2,Same amount added on to each part keeps it balanced.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F18
+additive_equivalence-F18-P2-test,C-EQ-5,Same amount added on to each part keeps it balanced.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F18
+additive_equivalence-F19-P1-dev,C-EQ-1,"You get from 2 to 8 by adding, so do that addition to the numerator.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F19
+additive_equivalence-F19-P1-test,C-EQ-4,"You get from 5 to 15 by adding, so do that addition to the numerator.",additive_equivalence,synthetic_template_author_written,additive_equivalence-F19
+additive_equivalence-F19-P2-dev,C-EQ-1,Add on to the numerator whatever you added to the denominator.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F19
+additive_equivalence-F19-P2-test,C-EQ-5,Add on to the numerator whatever you added to the denominator.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F19
+additive_equivalence-F20-P1-dev,C-EQ-3,I increased the numerator and denominator by the same number.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F20
+additive_equivalence-F20-P1-test,C-EQ-5,I increased the numerator and denominator by the same number.,additive_equivalence,synthetic_template_author_written,additive_equivalence-F20
+additive_equivalence-F20-P2-dev,C-EQ-3,increase both by the same number,additive_equivalence,synthetic_template_author_written,additive_equivalence-F20
+additive_equivalence-F20-P2-test,C-EQ-5,increase both by the same number,additive_equivalence,synthetic_template_author_written,additive_equivalence-F20
+larger_denominator_bigger-F01-P1-dev,C-CMP-1,1/5 is bigger because 5 is bigger than 3.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F01
+larger_denominator_bigger-F01-P1-test,C-CMP-4,3/8 is bigger because 8 is bigger than 5.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F01
+larger_denominator_bigger-F01-P2-dev,C-CMP-2,"9 is more than 7, so 2/9 is the larger fraction.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F01
+larger_denominator_bigger-F01-P2-test,C-CMP-5,"9 is more than 2, so 1/9 is the larger fraction.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F01
+larger_denominator_bigger-F02-P1-dev,C-CMP-3,"The bigger the denominator, the bigger the fraction.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F02
+larger_denominator_bigger-F02-P1-test,C-CMP-4,"The bigger the denominator, the bigger the fraction.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F02
+larger_denominator_bigger-F02-P2-dev,C-CMP-1,a bigger number on the bottom means a bigger fraction,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F02
+larger_denominator_bigger-F02-P2-test,C-CMP-4,a bigger number on the bottom means a bigger fraction,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F02
+larger_denominator_bigger-F03-P1-dev,C-CMP-1,The numerators are the same so I looked at the denominators and picked the bigger one.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F03
+larger_denominator_bigger-F03-P1-test,C-CMP-5,The numerators are the same so I looked at the denominators and picked the bigger one.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F03
+larger_denominator_bigger-F03-P2-dev,C-CMP-2,"Same top, so the one with the bigger bottom number is bigger.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F03
+larger_denominator_bigger-F03-P2-test,C-CMP-4,"Same top, so the one with the bigger bottom number is bigger.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F03
+larger_denominator_bigger-F04-P1-dev,C-CMP-1,1/5 has more pieces so it is more.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F04
+larger_denominator_bigger-F04-P1-test,C-CMP-5,1/9 has more pieces so it is more.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F04
+larger_denominator_bigger-F04-P2-dev,C-CMP-2,"There are 9 pieces in 2/9 and only 7 in 2/7, so 2/9 is more.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F04
+larger_denominator_bigger-F04-P2-test,C-CMP-5,"There are 9 pieces in 1/9 and only 2 in 1/2, so 1/9 is more.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F04
+larger_denominator_bigger-F05-P1-dev,C-CMP-3,"6 is a larger number, so 1/6 is larger.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F05
+larger_denominator_bigger-F05-P1-test,C-CMP-4,"8 is a larger number, so 3/8 is larger.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F05
+larger_denominator_bigger-F05-P2-dev,C-CMP-1,I compared the numbers and 5 is larger.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F05
+larger_denominator_bigger-F05-P2-test,C-CMP-5,I compared the numbers and 9 is larger.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F05
+larger_denominator_bigger-F06-P1-dev,C-CMP-2,More parts means more of the whole.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F06
+larger_denominator_bigger-F06-P1-test,C-CMP-4,More parts means more of the whole.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F06
+larger_denominator_bigger-F06-P2-dev,C-CMP-2,having more parts makes the fraction bigger,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F06
+larger_denominator_bigger-F06-P2-test,C-CMP-5,having more parts makes the fraction bigger,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F06
+larger_denominator_bigger-F07-P1-dev,C-CMP-3,"You compare fractions like whole numbers, so look at which bottom is bigger.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F07
+larger_denominator_bigger-F07-P1-test,C-CMP-4,"You compare fractions like whole numbers, so look at which bottom is bigger.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F07
+larger_denominator_bigger-F07-P2-dev,C-CMP-3,I compared them like normal numbers,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F07
+larger_denominator_bigger-F07-P2-test,C-CMP-5,I compared them like normal numbers,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F07
+larger_denominator_bigger-F08-P1-dev,C-CMP-1,"1/5 because it comes later when you count: 3, then 5.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F08
+larger_denominator_bigger-F08-P1-test,C-CMP-4,"3/8 because it comes later when you count: 5, then 8.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F08
+larger_denominator_bigger-F08-P2-dev,C-CMP-2,"9 comes after 7 when counting, so it's bigger.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F08
+larger_denominator_bigger-F08-P2-test,C-CMP-4,"8 comes after 5 when counting, so it's bigger.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F08
+larger_denominator_bigger-F09-P1-dev,C-CMP-1,If you cut it into 5 pieces you get more pizza than cutting it into 3.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F09
+larger_denominator_bigger-F09-P1-test,C-CMP-4,If you cut it into 8 pieces you get more pizza than cutting it into 5.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F09
+larger_denominator_bigger-F09-P2-dev,C-CMP-3,cutting into more slices gives you more pizza,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F09
+larger_denominator_bigger-F09-P2-test,C-CMP-5,cutting into more slices gives you more pizza,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F09
+larger_denominator_bigger-F10-P1-dev,C-CMP-1,"The denominator tells you how big it is, so the bigger denominator wins.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F10
+larger_denominator_bigger-F10-P1-test,C-CMP-5,"The denominator tells you how big it is, so the bigger denominator wins.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F10
+larger_denominator_bigger-F10-P2-dev,C-CMP-1,the bottom number shows the size and 5 is bigger,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F10
+larger_denominator_bigger-F10-P2-test,C-CMP-5,the bottom number shows the size and 9 is bigger,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F10
+larger_denominator_bigger-F11-P1-dev,C-CMP-3,1/6 is greater since its denominator is greater.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F11
+larger_denominator_bigger-F11-P1-test,C-CMP-5,1/9 is greater since its denominator is greater.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F11
+larger_denominator_bigger-F11-P2-dev,C-CMP-1,its denominator is greater so the fraction is greater,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F11
+larger_denominator_bigger-F11-P2-test,C-CMP-5,its denominator is greater so the fraction is greater,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F11
+larger_denominator_bigger-F12-P1-dev,C-CMP-1,The larger number on the bottom makes it worth more.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F12
+larger_denominator_bigger-F12-P1-test,C-CMP-5,The larger number on the bottom makes it worth more.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F12
+larger_denominator_bigger-F12-P2-dev,C-CMP-2,a large bottom number is worth more,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F12
+larger_denominator_bigger-F12-P2-test,C-CMP-4,a large bottom number is worth more,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F12
+larger_denominator_bigger-F13-P1-dev,C-CMP-1,1/5 is bigger since 5 is a higher number.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F13
+larger_denominator_bigger-F13-P1-test,C-CMP-5,1/9 is bigger since 9 is a higher number.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F13
+larger_denominator_bigger-F13-P2-dev,C-CMP-2,"Higher number on the bottom, so 2/9 is more.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F13
+larger_denominator_bigger-F13-P2-test,C-CMP-5,"Higher number on the bottom, so 1/9 is more.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F13
+larger_denominator_bigger-F14-P1-dev,C-CMP-2,You look at the denominators and the larger one is the larger fraction.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F14
+larger_denominator_bigger-F14-P1-test,C-CMP-4,You look at the denominators and the larger one is the larger fraction.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F14
+larger_denominator_bigger-F14-P2-dev,C-CMP-3,"look at the bottoms, the larger bottom is larger",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F14
+larger_denominator_bigger-F14-P2-test,C-CMP-4,"look at the bottoms, the larger bottom is larger",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F14
+larger_denominator_bigger-F15-P1-dev,C-CMP-3,"6 pieces is more than 4 pieces, so 1/6 has more.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F15
+larger_denominator_bigger-F15-P1-test,C-CMP-5,"9 pieces is more than 2 pieces, so 1/9 has more.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F15
+larger_denominator_bigger-F15-P2-dev,C-CMP-2,more pieces is more than fewer pieces,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F15
+larger_denominator_bigger-F15-P2-test,C-CMP-4,more pieces is more than fewer pieces,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F15
+larger_denominator_bigger-F16-P1-dev,C-CMP-1,"Since the tops are both 1, the bottom decides, and 5 beats 3.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F16
+larger_denominator_bigger-F16-P1-test,C-CMP-5,"Since the tops are both 1, the bottom decides, and 9 beats 2.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F16
+larger_denominator_bigger-F16-P2-dev,C-CMP-3,"Tops match, so the bigger bottom number wins.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F16
+larger_denominator_bigger-F16-P2-test,C-CMP-4,"Tops match, so the bigger bottom number wins.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F16
+larger_denominator_bigger-F17-P1-dev,C-CMP-1,"5 is greater than 3 like on a normal number line, so 1/5 is greater.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F17
+larger_denominator_bigger-F17-P1-test,C-CMP-4,"8 is greater than 5 like on a normal number line, so 3/8 is greater.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F17
+larger_denominator_bigger-F17-P2-dev,C-CMP-1,"On a number line 5 is past 3, so 1/5 is the bigger one.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F17
+larger_denominator_bigger-F17-P2-test,C-CMP-5,"On a number line 9 is past 2, so 1/9 is the bigger one.",larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F17
+larger_denominator_bigger-F18-P1-dev,C-CMP-3,1/6 because you are getting 6 slices instead of 4.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F18
+larger_denominator_bigger-F18-P1-test,C-CMP-4,3/8 because you are getting 8 slices instead of 5.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F18
+larger_denominator_bigger-F18-P2-dev,C-CMP-3,you get more slices with 1/6,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F18
+larger_denominator_bigger-F18-P2-test,C-CMP-4,you get more slices with 3/8,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F18
+larger_denominator_bigger-F19-P1-dev,C-CMP-2,The fraction with the biggest number in it is the biggest fraction.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F19
+larger_denominator_bigger-F19-P1-test,C-CMP-5,The fraction with the biggest number in it is the biggest fraction.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F19
+larger_denominator_bigger-F19-P2-dev,C-CMP-3,biggest number means biggest fraction,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F19
+larger_denominator_bigger-F19-P2-test,C-CMP-5,biggest number means biggest fraction,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F19
+larger_denominator_bigger-F20-P1-dev,C-CMP-1,A bigger denominator makes the fraction worth more.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F20
+larger_denominator_bigger-F20-P1-test,C-CMP-4,A bigger denominator makes the fraction worth more.,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F20
+larger_denominator_bigger-F20-P2-dev,C-CMP-1,bigger denominator = worth more,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F20
+larger_denominator_bigger-F20-P2-test,C-CMP-4,bigger denominator = worth more,larger_denominator_bigger,synthetic_template_author_written,larger_denominator_bigger-F20

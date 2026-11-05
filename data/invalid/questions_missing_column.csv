@@ -1,0 +1,41 @@
+question_id,topic,prompt,option_id,option_text,misconception_label,operation,operand_a,operand_b
+Q1,Equivalent fractions,Which fraction is equivalent to 1/2 and has denominator 8?,A,4/8,,equivalent,1/2,8
+Q1,Equivalent fractions,Which fraction is equivalent to 1/2 and has denominator 8?,B,7/8,additive_equivalence,equivalent,1/2,8
+Q1,Equivalent fractions,Which fraction is equivalent to 1/2 and has denominator 8?,C,1/8,unscaled_numerator,equivalent,1/2,8
+Q1,Equivalent fractions,Which fraction is equivalent to 1/2 and has denominator 8?,D,2/8,,equivalent,1/2,8
+Q2,Equivalent fractions,Which fraction is equivalent to 2/3 and has denominator 9? Explain how you got your answer.,A,8/9,additive_equivalence,equivalent,2/3,9
+Q2,Equivalent fractions,Which fraction is equivalent to 2/3 and has denominator 9? Explain how you got your answer.,B,6/9,,equivalent,2/3,9
+Q2,Equivalent fractions,Which fraction is equivalent to 2/3 and has denominator 9? Explain how you got your answer.,C,2/9,unscaled_numerator,equivalent,2/3,9
+Q2,Equivalent fractions,Which fraction is equivalent to 2/3 and has denominator 9? Explain how you got your answer.,D,3/9,,equivalent,2/3,9
+Q3,Equivalent fractions,Which fraction is equivalent to 3/4 and has denominator 12?,A,3/12,unscaled_numerator,equivalent,3/4,12
+Q3,Equivalent fractions,Which fraction is equivalent to 3/4 and has denominator 12?,B,11/12,additive_equivalence,equivalent,3/4,12
+Q3,Equivalent fractions,Which fraction is equivalent to 3/4 and has denominator 12?,C,6/12,,equivalent,3/4,12
+Q3,Equivalent fractions,Which fraction is equivalent to 3/4 and has denominator 12?,D,9/12,,equivalent,3/4,12
+Q4,Comparing fractions,Which fraction is larger: 1/3 or 1/5?,A,1/3,,compare_larger,1/3,1/5
+Q4,Comparing fractions,Which fraction is larger: 1/3 or 1/5?,B,1/5,larger_denominator_bigger,compare_larger,1/3,1/5
+Q4,Comparing fractions,Which fraction is larger: 1/3 or 1/5?,C,They are equal,,compare_larger,1/3,1/5
+Q4,Comparing fractions,Which fraction is larger: 1/3 or 1/5?,D,Not enough information,,compare_larger,1/3,1/5
+Q5,Comparing fractions,Which fraction is larger: 2/7 or 2/9? Explain how you got your answer.,A,2/9,larger_denominator_bigger,compare_larger,2/7,2/9
+Q5,Comparing fractions,Which fraction is larger: 2/7 or 2/9? Explain how you got your answer.,B,2/7,,compare_larger,2/7,2/9
+Q5,Comparing fractions,Which fraction is larger: 2/7 or 2/9? Explain how you got your answer.,C,They are equal,,compare_larger,2/7,2/9
+Q5,Comparing fractions,Which fraction is larger: 2/7 or 2/9? Explain how you got your answer.,D,Not enough information,,compare_larger,2/7,2/9
+Q6,Comparing fractions,Which fraction is larger: 3/4 or 3/8?,A,They are equal,,compare_larger,3/4,3/8
+Q6,Comparing fractions,Which fraction is larger: 3/4 or 3/8?,B,3/8,larger_denominator_bigger,compare_larger,3/4,3/8
+Q6,Comparing fractions,Which fraction is larger: 3/4 or 3/8?,C,3/4,,compare_larger,3/4,3/8
+Q6,Comparing fractions,Which fraction is larger: 3/4 or 3/8?,D,Not enough information,,compare_larger,3/4,3/8
+Q7,Adding unlike denominators,What is 1/2 + 1/3?,A,2/5,add_across,add,1/2,1/3
+Q7,Adding unlike denominators,What is 1/2 + 1/3?,B,5/6,,add,1/2,1/3
+Q7,Adding unlike denominators,What is 1/2 + 1/3?,C,2/6,unscaled_numerator,add,1/2,1/3
+Q7,Adding unlike denominators,What is 1/2 + 1/3?,D,1/6,,add,1/2,1/3
+Q8,Adding unlike denominators,What is 1/4 + 2/3? Explain how you got your answer.,A,11/12,,add,1/4,2/3
+Q8,Adding unlike denominators,What is 1/4 + 2/3? Explain how you got your answer.,B,3/7,add_across,add,1/4,2/3
+Q8,Adding unlike denominators,What is 1/4 + 2/3? Explain how you got your answer.,C,3/12,unscaled_numerator,add,1/4,2/3
+Q8,Adding unlike denominators,What is 1/4 + 2/3? Explain how you got your answer.,D,2/12,,add,1/4,2/3
+Q9,Adding unlike denominators,What is 3/5 + 1/10?,A,4/10,unscaled_numerator,add,3/5,1/10
+Q9,Adding unlike denominators,What is 3/5 + 1/10?,B,7/10,,add,3/5,1/10
+Q9,Adding unlike denominators,What is 3/5 + 1/10?,C,4/15,add_across,add,3/5,1/10
+Q9,Adding unlike denominators,What is 3/5 + 1/10?,D,7/15,,add,3/5,1/10
+Q10,Adding unlike denominators,What is 2/3 + 1/6? Explain how you got your answer.,A,3/9,add_across,add,2/3,1/6
+Q10,Adding unlike denominators,What is 2/3 + 1/6? Explain how you got your answer.,B,3/6,unscaled_numerator,add,2/3,1/6
+Q10,Adding unlike denominators,What is 2/3 + 1/6? Explain how you got your answer.,C,5/6,,add,2/3,1/6
+Q10,Adding unlike denominators,What is 2/3 + 1/6? Explain how you got your answer.,D,4/6,,add,2/3,1/6
