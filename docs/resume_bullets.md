@@ -14,7 +14,7 @@ Plotly, pytest, GitHub Actions) · personal project · synthetic data
   scikit-learn Pipeline with group-aware, held-out-context evaluation. It reached 0.62
   macro-F1 versus 0.07 for a majority-class baseline on a synthetic test set, and routes
   low-confidence predictions to teacher review using a threshold chosen on validation data.
-- Wrote 51 pytest tests and a GitHub Actions workflow covering input validation, metric
+- Wrote 61 pytest tests and a GitHub Actions workflow covering input validation, metric
   denominators, train/test leakage, and app smoke tests, and documented the results,
   failure modes and limitations in a model card.
 

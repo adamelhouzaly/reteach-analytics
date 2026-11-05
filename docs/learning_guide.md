@@ -65,12 +65,20 @@ Pipeline([
 It trains, predicts on the untouched test set, computes metrics, compares against a
 `DummyClassifier`, and writes `artifacts/metrics.json` plus a readable report.
 
-### 8. `app.py`: presentation only
-Streamlit reruns the whole script top to bottom on every click. `st.session_state` remembers
-things between reruns, such as the current dataset and the saved corrections.
-`@st.cache_resource` keeps the trained model in memory so it isn't rebuilt on every click.
-Each tab is a function wrapped in `safe(...)`, which shows a friendly message if something
-fails.
+### 8. `app.py`, `views/` and `ui/`: presentation only
+Streamlit reruns the whole script top to bottom on every click.
+- `app.py` sets up the page and the top navigation (`st.navigation`). Each page is a file
+  in `views/`.
+- `ui/state.py` holds `st.session_state`, which remembers things between reruns, such as
+  the current dataset, the confirmed labels and the threshold setting. Widgets copy their
+  value into plain state keys through `on_change`, so a setting survives page changes.
+  `@st.cache_resource` keeps the trained model in memory.
+- `ui/theme.py` holds the colour tokens and a small amount of CSS. That CSS targets only
+  classes we create with `st.container(key="card-...")`.
+- `ui/components.py` has reusable pieces such as the page header, cards, tags and empty
+  states.
+- `app.py` wraps each page in a `try/except`, so teachers see a friendly message instead
+  of a traceback.
 
 ## Part 2: ML concepts in plain language
 

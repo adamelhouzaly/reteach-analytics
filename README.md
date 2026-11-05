@@ -8,11 +8,11 @@ concepts are worth reteaching, along with the evidence for each suggestion.
 > project author from templates. No real students, schools or classrooms are involved. No
 > expert annotated the data, and nothing here shows that the tool improves learning.
 
-![Overview tab](docs/screenshots/overview.png)
+![Class overview](docs/screenshots/overview.png)
 
 | Student groups | Teacher review & correction | Model evaluation |
 |---|---|---|
-| ![Groups](docs/screenshots/student_groups.png) | ![Review](docs/screenshots/review_correction.png) | ![Evaluation](docs/screenshots/evaluation.png) |
+| ![Groups](docs/screenshots/student_groups.png) | ![Review](docs/screenshots/review.png) | ![Evaluation](docs/screenshots/evaluation.png) |
 
 *Screenshots of the synthetic demo, captured with headless Chrome.*
 
@@ -29,18 +29,21 @@ prerequisites: **equivalent fractions** and **comparing fractions**.
 
 ## What a teacher can do
 
-| View | What it shows | Source |
+| Page | What it shows | Source |
 |---|---|---|
-| **Overview** | Students, response coverage, accuracy, common error patterns, suggested topics with the reason for each, Markdown report export | Rules |
-| **Misconceptions** | Each misconception with chosen/opportunity counts, student denominators, supporting questions, example answers, student IDs | Teacher-defined answer key |
-| **Student groups** | Anonymous groups with recurring patterns, evidence such as "2 of 4 questions", and an adjustable minimum-support threshold (default 2) | Rules |
-| **Written-answer review** | Explanation, ML-suggested category, model score, review status, teacher correction | **ML** (TF-IDF + logistic regression) |
-| **Model evaluation** | Comparison with a baseline, confusion matrix, per-class metrics, threshold trade-off, errors, limitations | Saved evaluation |
-| **Data upload** | Templates, schema guidance, actionable validation messages | Validation |
+| **Overview** | Four summary cards (students, class accuracy, response coverage, answers to review), a "What to reteach next" panel with evidence and links to the details, topic accuracy, common mistakes, question results and the report export (in expandable sections) | Rules |
+| **Misconceptions** | One card per misconception: a plain-language title, one-sentence explanation, students showing it vs. meeting the recurring threshold, a short activity, and expandable students, supporting questions and examples | Answer key |
+| **Student groups** | Teaching groups with focus, size, activity and searchable member tables. "No recurring pattern" is kept separate from "All answers correct". | Rules |
+| **Review answers** | One answer at a time: the student's choice, explanation, model suggestion and status, and a category to confirm or change. Threshold settings are under *Advanced*. | **ML** + teacher |
+| **Upload data** | Data in use, reset to demo, templates, schema guide, and specific validation feedback | Validation |
+| **Model evaluation** | Comparison with a baseline, confusion matrix, per-category results, threshold trade-off, errors, limitations | Saved evaluation |
 
 The app keeps **teacher-defined rules** (the answer-key mapping from distractor to
-misconception) visibly separate from **machine-learning suggestions**, using a blue "Teacher-defined rule"
-badge and an orange "ML suggestion" badge. Rule-based lookups are never presented as AI.
+misconception) visibly separate from **machine-learning suggestions**. Teal "Answer-key rule"
+tags mark rule-based results, indigo "Model suggestion" tags mark ML output, and a solid
+"Teacher-confirmed" tag marks labels a teacher saved. Rule-based lookups are never presented
+as AI. The recurring-pattern threshold (default 2 questions) can be changed on the
+Misconceptions and Student groups pages and applies everywhere.
 
 ## Quick start
 
@@ -69,21 +72,21 @@ which takes about a second. It never loads pickle or joblib files from uploads.
 
 ## 90-second demo walkthrough
 
-1. **Overview.** 60 synthetic students and 96% response coverage. *Adding unlike
-   denominators* is suggested for review because accuracy is 55% **and** two misconceptions
-   recur for 27% of students. Each reason is listed. Download the report.
-2. **Misconceptions.** "Adds numerators and denominators" was chosen 60 times out of 229
-   opportunities. Each card shows the supporting questions, the IDs of students for whom
-   it recurs, and students with only one supporting question (insufficient evidence).
-3. **Student groups.** Move the *Minimum supporting questions* slider from 2 to 1 and watch
-   the groups grow. A single wrong answer is evidence, not a diagnosis.
-4. **Written-answer review.** Every prediction is routed to review by default (explained
-   below). Pick an explanation, correct its category, and save. The correction goes to
+1. **Overview.** 60 synthetic students, 59% accuracy and 96% response coverage. *What to
+   reteach next* names *Adding unlike denominators*: it is below the 70% target (55%), and
+   two misconceptions recur for 16 of 60 students each. Click **See misconception evidence**.
+2. **Misconceptions.** The selected card opens first. "Adds the tops and the bottoms":
+   26 of 60 students showed it at least once, and 16 meet the 2-question threshold. Expand
+   *Students* to see who, and on how many questions.
+3. **Student groups.** Switch the threshold from 2 to 1 question and watch the groups grow.
+   A single wrong answer is evidence, not a diagnosis.
+4. **Review answers.** Every suggestion is routed to review by default (explained below).
+   Choose a category and click **Save category**. The label is saved to
    `outputs/teacher_corrections.csv` with provenance and is **not** used for retraining.
-5. **Model evaluation.** Comparison with the baseline, the confusion matrix, and the
+5. **Upload data.** Upload `data/invalid/responses_messy.csv`, click **Check files**, and
+   read the specific feedback. **Reset to demo data** restores the demo.
+6. **Model evaluation.** Comparison with the baseline, the confusion matrix, and the
    honest limitations.
-6. **Data upload.** Upload `data/invalid/responses_messy.csv` and read the specific
-   validation feedback.
 
 A fuller script is in [docs/demo_script.md](docs/demo_script.md).
 
@@ -138,6 +141,10 @@ Templates you can download are in `data/templates/`, and deliberately broken inp
 | Blank `student_id` | Row dropped, with a warning. |
 | Empty file, header only, missing column, two correct options, wrong arithmetic | Blocking error with a specific message. |
 
+Uploaded data is kept only for the current browser session. Refreshing the page or
+pressing **Reset to demo data** returns to the demo, while saved teacher labels in
+`outputs/` are kept.
+
 **Accuracy = correct ÷ answered.** "Students" means anyone with at least one response row.
 Expected responses = students × questions.
 
@@ -184,7 +191,11 @@ real student writing and say nothing about classroom effectiveness.**
 ## Architecture
 
 ```
-app.py                     Streamlit presentation only
+app.py                     Streamlit entry point: page setup + top navigation
+views/                     one file per page (overview, misconceptions, groups, review,
+                           upload, evaluation) — presentation only
+ui/                        shared presentation: theme tokens + CSS, session state, components
+.streamlit/config.toml     theme (colours, radius, fonts)
 reteach/
   taxonomy.py              categories, handling states, authored review guidance
   arithmetic.py            fractions-module answer-key checks
@@ -239,9 +250,9 @@ reviewed retraining workflow would:
 
 ## Tests and CI
 
-`python -m pytest` runs 51 tests. They cover answer-key arithmetic, schema and input
+`python -m pytest` runs 61 tests. They cover answer-key arithmetic, schema and input
 validation, metric denominators, recurring-pattern grouping, blank and unknown responses,
 the absence of group or context overlap between training and test, training and inference
 handling states, report and correction export, and headless app smoke tests (including
-the correction flow). GitHub Actions runs lint, a reproducibility check on the generated data,
+the overview action, threshold persistence, correction flow, upload and reset). GitHub Actions runs lint, a reproducibility check on the generated data,
 the evaluation and the tests on Python 3.11 and 3.12.
