@@ -76,8 +76,18 @@ def test_grouping_min_support(tiny_questions, scored):
 
 def test_groups_collapse_students(tiny_questions, scored):
     g = gr.groups(gr.student_patterns(tiny_questions, scored, 1)).set_index("group")
-    assert g.loc["Add across", "n_students"] == 2
-    assert g.loc[gr.NO_PATTERN, "n_students"] == 1
+    assert g.loc["Adds across", "n_students"] == 2
+    assert g.loc[gr.ALL_CORRECT, "n_students"] == 1     # S3 answered everything correctly
+    assert gr.NO_PATTERN not in g.index
+
+
+def test_no_pattern_is_distinct_from_all_correct(tiny_questions, scored):
+    p = gr.student_patterns(tiny_questions, scored, 2).set_index("student_id")
+    assert p.loc["S3", "group"] == gr.ALL_CORRECT       # 3 of 3 correct
+    assert p.loc["S2", "group"] == gr.NO_PATTERN        # one add-across error, not recurring
+    g = gr.groups(gr.student_patterns(tiny_questions, scored, 2))
+    assert list(g["group"])[-2:] == [gr.NO_PATTERN, gr.ALL_CORRECT]
+    assert not g.set_index("group").loc[[gr.NO_PATTERN, gr.ALL_CORRECT], "is_pattern"].any()
 
 
 def test_invalid_min_support(tiny_questions, scored):

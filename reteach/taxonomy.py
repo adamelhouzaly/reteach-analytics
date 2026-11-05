@@ -43,11 +43,18 @@ class Category:
     description: str
     example: str
     review_activity: str
+    # Plain-language text for teacher-facing cards (authored, deterministic).
+    title: str = ""
+    summary: str = ""
+    activity: str = ""
 
 
 CATEGORIES: dict[str, Category] = {
     CORRECT: Category(
         label=CORRECT,
+        title='Correct reasoning',
+        summary='Uses a common denominator and scales both parts of each fraction.',
+        activity='Extension: explain why any common denominator works, not only the smallest.',
         name="Correct reasoning",
         short="Correct",
         description="Rewrites both fractions over a common denominator, scaling "
@@ -58,8 +65,11 @@ CATEGORIES: dict[str, Category] = {
     ),
     ADD_ACROSS: Category(
         label=ADD_ACROSS,
+        title='Adds the tops and the bottoms',
+        summary='Adds numerators together and denominators together, as if they were separate whole numbers.',
+        activity='Estimate first, then use fraction strips to show 2/5 is smaller than 1/2, so it cannot be 1/2 + 1/3.',
         name="Adds numerators and denominators",
-        short="Add across",
+        short="Adds across",
         description="Treats a fraction as two separate whole numbers and adds "
         "top-to-top and bottom-to-bottom.",
         example="1/2 + 1/3 = 2/5  (correct: 5/6). Note 2/5 < 1/2, so the 'sum' is "
@@ -70,8 +80,11 @@ CATEGORIES: dict[str, Category] = {
     ),
     UNSCALED_NUMERATOR: Category(
         label=UNSCALED_NUMERATOR,
+        title='Changes the bottom but not the top',
+        summary='Rewrites fractions with a new denominator but keeps the old numerator, so the value changes.',
+        activity='Shade 1/2 of a rectangle, cut it into sixths, and count the shaded pieces (3, not 1).',
         name="Changes denominator without scaling numerator",
-        short="Unscaled numerator",
+        short="Top not scaled",
         description="Finds or uses a new denominator but keeps the original "
         "numerator(s), so the rewritten fraction is no longer equivalent.",
         example="1/2 + 1/3 → 1/6 + 1/6 = 2/6  (correct: 3/6 + 2/6 = 5/6); "
@@ -82,8 +95,11 @@ CATEGORIES: dict[str, Category] = {
     ),
     ADDITIVE_EQUIVALENCE: Category(
         label=ADDITIVE_EQUIVALENCE,
+        title='Adds instead of multiplying for equivalent fractions',
+        summary='Adds the same number to top and bottom, believing the fraction keeps its value.',
+        activity='Draw 1/2 and 2/3 (add 1 to both) and compare sizes; contrast with 1/2 = 2/4 (multiply by 2).',
         name="Adds (not multiplies) to make equivalent fractions",
-        short="Additive equivalence",
+        short="Adds for equivalents",
         description="Adds the same number to numerator and denominator, "
         "believing this keeps the fraction's value.",
         example="1/2 = ?/8 → adds 6 to both → 7/8  (correct: multiply by 4 → 4/8).",
@@ -93,8 +109,11 @@ CATEGORIES: dict[str, Category] = {
     ),
     LARGER_DENOMINATOR: Category(
         label=LARGER_DENOMINATOR,
+        title='Thinks a bigger denominator means a bigger fraction',
+        summary='Orders fractions by their denominators like whole numbers, so 1/5 seems larger than 1/3.',
+        activity='Fair-share task: one pizza shared by 3 people or by 5 — who gets more? Then place unit fractions on a number line.',
         name="Larger denominator means larger fraction",
-        short="Bigger denominator",
+        short="Bigger bottom, bigger fraction",
         description="Applies whole-number ordering to denominators: thinks 1/5 > 1/3 "
         "because 5 > 3.",
         example="Which is larger, 1/3 or 1/5? → chooses 1/5  (correct: 1/3, because "
@@ -121,6 +140,13 @@ def display_name(label: str) -> str:
     if not label:
         return "Unmapped wrong answer"
     return label.replace("_", " ").capitalize()
+
+
+def title(label: str) -> str:
+    """Plain-language title for teacher-facing views."""
+    if label in CATEGORIES and CATEGORIES[label].title:
+        return CATEGORIES[label].title
+    return display_name(label)
 
 
 def short_name(label: str) -> str:

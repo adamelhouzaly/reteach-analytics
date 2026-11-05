@@ -16,6 +16,8 @@ from . import taxonomy as tx
 from .analytics import DEFAULT_MIN_SUPPORT
 
 NO_PATTERN = "No recurring pattern"
+# Kept separate from NO_PATTERN: "no recurring pattern" does not mean "no difficulty".
+ALL_CORRECT = "All answers correct"
 
 
 def student_evidence(questions: pd.DataFrame, scored: pd.DataFrame) -> pd.DataFrame:
@@ -69,10 +71,16 @@ def student_patterns(
         possible = s[(s["n_supporting"] > 0) & (s["n_supporting"] < min_support)]
         a = answered[answered["student_id"] == sid]
         key = tuple(sorted(recurring["misconception"]))
+        if key:
+            group = " + ".join(tx.short_name(k) for k in key)
+        elif len(a) and int(a["is_correct"].sum()) == len(a):
+            group = ALL_CORRECT
+        else:
+            group = NO_PATTERN
         rows.append(
             {
                 "student_id": sid,
-                "group": " + ".join(tx.short_name(k) for k in key) if key else NO_PATTERN,
+                "group": group,
                 "recurring": list(key),
                 "possible": sorted(possible["misconception"]),
                 "evidence": "; ".join(
@@ -101,7 +109,7 @@ def groups(patterns: pd.DataFrame) -> pd.DataFrame:
         )
         .reset_index()
     )
-    out["is_pattern"] = out["group"] != NO_PATTERN
-    return out.sort_values(["is_pattern", "n_students"], ascending=[False, False]).reset_index(
-        drop=True
-    )
+    out["is_pattern"] = ~out["group"].isin([NO_PATTERN, ALL_CORRECT])
+    out["order"] = out["group"].map({NO_PATTERN: 1, ALL_CORRECT: 2}).fillna(0)
+    return (out.sort_values(["order", "n_students"], ascending=[True, False])
+            .drop(columns="order").reset_index(drop=True))

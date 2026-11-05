@@ -73,6 +73,15 @@ class ValidationResult:
         return not self.errors
 
 
+def _n(count: int, word: str) -> str:
+    """'1 row' / '3 rows'."""
+    return f"{count} {word}{'' if count == 1 else 's'}"
+
+
+def _lines(index: pd.Index) -> str:
+    return ("line " if len(index) == 1 else "lines ") + _rows(index)
+
+
 def _rows(index: pd.Index) -> str:
     """Format DataFrame index values as 1-based CSV line numbers (header = line 1)."""
     lines = [str(i + 2) for i in list(index)[:_MAX_LISTED]]
@@ -125,27 +134,27 @@ def validate_questions(source) -> ValidationResult:
     for col in ["question_id", "topic", "prompt", "option_id", "option_text"]:
         blank = df.index[df[col] == ""]
         if len(blank):
-            errors.append(f"Column '{col}' is blank on line(s) {_rows(blank)}.")
+            errors.append(f"Column '{col}' is blank on {_lines(blank)}.")
 
     lowered = df["is_correct"].str.lower()
     bad_bool = df.index[~lowered.isin(_TRUE | _FALSE)]
     if len(bad_bool):
         errors.append(
-            f"'is_correct' must be TRUE or FALSE; check line(s) {_rows(bad_bool)}."
+            f"'is_correct' must be TRUE or FALSE; check {_lines(bad_bool)}."
         )
     df["is_correct"] = lowered.isin(_TRUE)
 
     bad_label = df.index[~df["misconception_label"].isin([*tx.MISCONCEPTIONS, tx.UNMAPPED])]
     if len(bad_label):
         errors.append(
-            f"Unknown misconception_label on line(s) {_rows(bad_label)}. Allowed values: "
+            f"Unknown misconception_label on {_lines(bad_label)}. Allowed values: "
             + ", ".join(tx.MISCONCEPTIONS)
             + " (or blank)."
         )
 
     dup = df.index[df.duplicated(["question_id", "option_id"], keep="first")]
     if len(dup):
-        errors.append(f"Duplicate question_id + option_id on line(s) {_rows(dup)}.")
+        errors.append(f"Duplicate question_id + option_id on {_lines(dup)}.")
 
     if errors:
         return res
@@ -213,7 +222,7 @@ def validate_responses(source, questions: pd.DataFrame) -> ValidationResult:
 
     no_id = df.index[df["student_id"] == ""]
     if len(no_id):
-        warnings.append(f"Dropped {len(no_id)} row(s) with no student_id (line(s) {_rows(no_id)}).")
+        warnings.append(f"Dropped {_n(len(no_id), 'row')} with no student_id ({_lines(no_id)}).")
         keep[no_id] = False
 
     known_q = set(questions["question_id"])
@@ -221,8 +230,8 @@ def validate_responses(source, questions: pd.DataFrame) -> ValidationResult:
     if len(unknown):
         ids = sorted(set(df.loc[unknown, "question_id"]))[:_MAX_LISTED]
         warnings.append(
-            f"Dropped {len(unknown)} row(s) with unknown question_id {ids} "
-            f"(line(s) {_rows(unknown)})."
+            f"Dropped {_n(len(unknown), 'row')} with unknown question_id "
+            f"{', '.join(ids)} ({_lines(unknown)})."
         )
         keep[unknown] = False
 
@@ -232,8 +241,8 @@ def validate_responses(source, questions: pd.DataFrame) -> ValidationResult:
     invalid = df.index[keep & (df["selected_option"] != "") & ~is_valid_choice]
     if len(invalid):
         warnings.append(
-            f"Dropped {len(invalid)} row(s) whose selected_option is not an option for that "
-            f"question (line(s) {_rows(invalid)})."
+            f"Dropped {_n(len(invalid), 'row')} whose selected_option is not an option for "
+            f"that question ({_lines(invalid)})."
         )
         keep[invalid] = False
 
@@ -241,8 +250,8 @@ def validate_responses(source, questions: pd.DataFrame) -> ValidationResult:
     dup = df.duplicated(["student_id", "question_id"], keep="last")
     if dup.any():
         warnings.append(
-            f"Found {int(dup.sum())} duplicate student/question row(s); kept the last one "
-            f"(line(s) {_rows(df.index[dup])})."
+            f"Found {_n(int(dup.sum()), 'duplicate student/question row')}; kept the last "
+            f"one ({_lines(df.index[dup])})."
         )
         df = df[~dup]
 
@@ -263,10 +272,10 @@ def validate_labeled(source) -> ValidationResult:
         return res
     bad = res.df.index[~res.df["label"].isin(tx.TEXT_LABELS)]
     if len(bad):
-        res.errors.append(f"Unknown label on line(s) {_rows(bad)}.")
+        res.errors.append(f"Unknown label on {_lines(bad)}.")
     blank = res.df.index[(res.df["explanation"] == "") | (res.df["group_id"] == "")]
     if len(blank):
-        res.errors.append(f"Blank explanation or group_id on line(s) {_rows(blank)}.")
+        res.errors.append(f"Blank explanation or group_id on {_lines(blank)}.")
     if res.df["example_id"].duplicated().any():
         res.errors.append("example_id values must be unique.")
     return res
